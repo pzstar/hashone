@@ -1,0 +1,1155 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: HashOne 1.0.0\n"
+"Report-Msgid-Bugs-To: http://hashthemes.com\n"
+"POT-Creation-Date: 2020-03-31 11:04+0000\n"
+"POT-Revision-Date: Tue Aug 09 2016 22:16:59 GMT+0545 (Nepal Standard Time)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Hash Themes <hashthemes@gmail.com>\n"
+"Language-Team: English <hashthemes@gmail.com>\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: functions.php:27
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:82
+msgid "Right Sidebar"
+msgstr ""
+
+#: functions.php:84 functions.php:94
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: functions.php:92
+msgid "Left Sidebar"
+msgstr ""
+
+#: functions.php:102
+msgid "Contact Form"
+msgstr ""
+
+#: functions.php:104
+msgid "Add widgets here to appear in the Contact Section of the Home Page."
+msgstr ""
+
+#: functions.php:112
+msgid "About Us"
+msgstr ""
+
+#: functions.php:114
+msgid "Add widgets here to appear in the About Section of the Home Page."
+msgstr ""
+
+#: functions.php:122
+msgid "Footer One"
+msgstr ""
+
+#: functions.php:124 functions.php:134 functions.php:144 functions.php:154
+msgid "Add widgets here to appear in your Footer."
+msgstr ""
+
+#: functions.php:132
+msgid "Footer Two"
+msgstr ""
+
+#: functions.php:142
+msgid "Footer Three"
+msgstr ""
+
+#: functions.php:152
+msgid "Footer Four"
+msgstr ""
+
+#. Translators: If there are characters in your language that are not supported
+#. by Open Sans, translate this to 'off'. Do not translate into your own language.
+#: functions.php:182
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#. Translators: If there are characters in your language that are not supported
+#. by Inconsolata, translate this to 'off'. Do not translate into your own language.
+#: functions.php:190
+msgctxt "Roboto Condensed font: on or off"
+msgid "on"
+msgstr ""
+
+#. Translators: To add an additional character subset specific to your language,
+#. translate this to 'greek', 'cyrillic', 'devanagari' or 'vietnamese'. Do not translate into your own language.
+#: functions.php:198
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#: 404.php:12
+msgid "404 Error"
+msgstr ""
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: archive.php:42 search.php:38
+msgid "Prev"
+msgstr ""
+
+#: archive.php:43 search.php:39
+msgid "Next"
+msgstr ""
+
+#: comments.php:25
+#, php-format
+msgctxt "comments title"
+msgid "One Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:34
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:35
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:55
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:66
+msgid "Name"
+msgstr ""
+
+#: comments.php:69 inc/customizer.php:1299
+msgid "Email"
+msgstr ""
+
+#: comments.php:72 inc/customizer.php:1311
+msgid "Website"
+msgstr ""
+
+#: comments.php:78 inc/template-tags.php:33
+msgid "Comment"
+msgstr ""
+
+#: search.php:12
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: footer.php:56 inc/customizer.php:1396
+#, php-format
+msgid "© Copyright 2020 %s"
+msgstr ""
+
+#: footer.php:64
+msgid "WordPress Theme"
+msgstr ""
+
+#: footer.php:66
+#, php-format
+msgid "%1$s by %2$s"
+msgstr ""
+
+#: inc/customizer.php:20
+msgid "-- Don't Replace --"
+msgstr ""
+
+#: inc/customizer.php:52
+msgid "Black"
+msgstr ""
+
+#: inc/customizer.php:53
+msgid "White"
+msgstr ""
+
+#: inc/customizer.php:59 welcome/sections/support.php:3
+msgid "Documentation"
+msgstr ""
+
+#: inc/customizer.php:61
+msgid "View"
+msgstr ""
+
+#: inc/customizer.php:66
+msgid "Import Demo Content"
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "Import"
+msgstr ""
+
+#: inc/customizer.php:74
+msgid "General Settings"
+msgstr ""
+
+#: inc/customizer.php:80
+msgid "Static Front Page"
+msgstr ""
+
+#: inc/customizer.php:82
+msgid "Your theme supports a static front page."
+msgstr ""
+
+#: inc/customizer.php:87
+msgid "Site Title & Tagline"
+msgstr ""
+
+#: inc/customizer.php:93
+msgid "Header Logo"
+msgstr ""
+
+#: inc/customizer.php:99
+msgid "Header Background"
+msgstr ""
+
+#: inc/customizer.php:113
+msgid "Header Background Color"
+msgstr ""
+
+#: inc/customizer.php:115
+msgid "Only appears in sticky header in featured frontpage."
+msgstr ""
+
+#: inc/customizer.php:120 inc/customizer.php:130
+msgid "Page Header Banner"
+msgstr ""
+
+#: inc/customizer.php:133
+msgid "Recommended Image Size: 1800X400px"
+msgstr ""
+
+#: inc/customizer.php:138
+msgid "Blog Settings"
+msgstr ""
+
+#: inc/customizer.php:148
+msgid "Blog Content Format"
+msgstr ""
+
+#: inc/customizer.php:153
+msgid "Excerpt"
+msgstr ""
+
+#: inc/customizer.php:154
+msgid "Full Content"
+msgstr ""
+
+#: inc/customizer.php:160
+msgid "Background Image"
+msgstr ""
+
+#: inc/customizer.php:166
+msgid "Colors"
+msgstr ""
+
+#: inc/customizer.php:172
+msgid "Home Page Sections"
+msgstr ""
+
+#: inc/customizer.php:177
+msgid "Slider Section"
+msgstr ""
+
+#: inc/customizer.php:191
+msgid "Slider "
+msgstr ""
+
+#: inc/customizer.php:202 inc/customizer.php:259 inc/customizer.php:415
+#: inc/customizer.php:614 inc/customizer.php:709
+msgid "Select a Page"
+msgstr ""
+
+#: inc/customizer.php:213
+msgid "Note:"
+msgstr ""
+
+#: inc/customizer.php:214
+msgid ""
+"The Page featured image works as a slider banner and the title & content "
+"work as a slider caption."
+msgstr ""
+
+#: inc/customizer.php:214
+msgid "Recommended Image Size: 1900X600"
+msgstr ""
+
+#: inc/customizer.php:220
+msgid "About Us Section"
+msgstr ""
+
+#: inc/customizer.php:233
+msgid "Disable About Section "
+msgstr ""
+
+#: inc/customizer.php:235 inc/customizer.php:350 inc/customizer.php:449
+#: inc/customizer.php:530 inc/customizer.php:647 inc/customizer.php:779
+#: inc/customizer.php:910 inc/customizer.php:992 inc/customizer.php:1075
+#: inc/customizer.php:1169
+msgid "Yes"
+msgstr ""
+
+#: inc/customizer.php:236 inc/customizer.php:351 inc/customizer.php:450
+#: inc/customizer.php:531 inc/customizer.php:648 inc/customizer.php:780
+#: inc/customizer.php:911 inc/customizer.php:993 inc/customizer.php:1076
+#: inc/customizer.php:1170
+msgid "No"
+msgstr ""
+
+#: inc/customizer.php:247
+msgid "About Us Page"
+msgstr ""
+
+#: inc/customizer.php:269
+msgid "Progress Bars"
+msgstr ""
+
+#: inc/customizer.php:281
+msgid "Replace Progress Bar by widget"
+msgstr ""
+
+#: inc/customizer.php:293
+msgid "Progress Bar "
+msgstr ""
+
+#: inc/customizer.php:297 template-parts/section-about.php:41
+msgid "Progress Bar Title"
+msgstr ""
+
+#: inc/customizer.php:309
+msgid "Check to Disable"
+msgstr ""
+
+#: inc/customizer.php:317 inc/customizer.php:375 inc/customizer.php:474
+#: inc/customizer.php:555 inc/customizer.php:672 inc/customizer.php:804
+#: inc/customizer.php:864 inc/customizer.php:935 inc/customizer.php:1017
+#: inc/customizer.php:1100 inc/customizer.php:1194
+msgid "Title"
+msgstr ""
+
+#: inc/customizer.php:328
+msgid "Percentage"
+msgstr ""
+
+#: inc/customizer.php:335
+msgid "Featured Section"
+msgstr ""
+
+#: inc/customizer.php:348
+msgid "Disable Featured Section "
+msgstr ""
+
+#: inc/customizer.php:362
+msgid "Featured Title / SubTitle "
+msgstr ""
+
+#: inc/customizer.php:366 template-parts/section-feature.php:17
+msgid "Our Features"
+msgstr ""
+
+#: inc/customizer.php:379 template-parts/section-feature.php:18
+msgid "Check out cool featured of the theme"
+msgstr ""
+
+#: inc/customizer.php:388 inc/customizer.php:487 inc/customizer.php:568
+#: inc/customizer.php:685 inc/customizer.php:817 inc/customizer.php:948
+#: inc/customizer.php:1030 inc/customizer.php:1113 inc/customizer.php:1207
+msgid "Sub Title"
+msgstr ""
+
+#: inc/customizer.php:403
+msgid "Featured Page "
+msgstr ""
+
+#: inc/customizer.php:427 inc/customizer.php:626
+msgid "FontAwesome Icon"
+msgstr ""
+
+#: inc/customizer.php:434
+msgid "Portfolio Section"
+msgstr ""
+
+#: inc/customizer.php:447
+msgid "Disable Portfolio Section "
+msgstr ""
+
+#: inc/customizer.php:461
+msgid "Portfolio Title/SubTitle"
+msgstr ""
+
+#: inc/customizer.php:465 template-parts/section-portfolio.php:10
+msgid "What we do it love"
+msgstr ""
+
+#: inc/customizer.php:478 template-parts/section-portfolio.php:11
+msgid "Check our beautiful works we do"
+msgstr ""
+
+#: inc/customizer.php:498
+msgid "Portfolio Category"
+msgstr ""
+
+#: inc/customizer.php:515
+msgid "Service Section"
+msgstr ""
+
+#: inc/customizer.php:528
+msgid "Disable Service Section "
+msgstr ""
+
+#: inc/customizer.php:542
+msgid "Serivce Title / SubTitle"
+msgstr ""
+
+#: inc/customizer.php:546 template-parts/section-service.php:19
+msgid "Why Choose Us"
+msgstr ""
+
+#: inc/customizer.php:559 template-parts/section-service.php:20
+msgid "Let us do all things for you"
+msgstr ""
+
+#: inc/customizer.php:579
+msgid "Service Left Banner Image"
+msgstr ""
+
+#: inc/customizer.php:591
+msgid "Image Size: 770X650px"
+msgstr ""
+
+#: inc/customizer.php:602
+msgid "Service Page "
+msgstr ""
+
+#: inc/customizer.php:632
+msgid "Team Section"
+msgstr ""
+
+#: inc/customizer.php:645
+msgid "Disable Team Section "
+msgstr ""
+
+#: inc/customizer.php:659
+msgid "Team Title / SubTitle "
+msgstr ""
+
+#: inc/customizer.php:663 template-parts/section-team.php:17
+msgid "Meet Our Team"
+msgstr ""
+
+#: inc/customizer.php:676 template-parts/section-team.php:18
+msgid "Experts who works for us"
+msgstr ""
+
+#: inc/customizer.php:697
+msgid "Team "
+msgstr ""
+
+#: inc/customizer.php:713 template-parts/section-team.php:40
+msgid "CEO"
+msgstr ""
+
+#: inc/customizer.php:721
+msgid "Team Member Designation"
+msgstr ""
+
+#: inc/customizer.php:733
+msgid "Facebook Url"
+msgstr ""
+
+#: inc/customizer.php:745
+msgid "Twitter Url"
+msgstr ""
+
+#: inc/customizer.php:757
+msgid "Linkedin Url"
+msgstr ""
+
+#: inc/customizer.php:764
+msgid "Counter Section"
+msgstr ""
+
+#: inc/customizer.php:777
+msgid "Disable Counter Section "
+msgstr ""
+
+#: inc/customizer.php:791
+msgid "Counter Title / SubTitle"
+msgstr ""
+
+#: inc/customizer.php:795 template-parts/section-counter.php:13
+msgid "OUR FACTS"
+msgstr ""
+
+#: inc/customizer.php:808 template-parts/section-counter.php:14
+msgid "Some Numbers that Speaks"
+msgstr ""
+
+#: inc/customizer.php:827
+msgid "Counter Section Background"
+msgstr ""
+
+#: inc/customizer.php:839
+msgid "Image Size: 1800X400px"
+msgstr ""
+
+#: inc/customizer.php:851
+msgid "Counter "
+msgstr ""
+
+#: inc/customizer.php:855 template-parts/section-counter.php:28
+msgid "Cups of Coffee"
+msgstr ""
+
+#: inc/customizer.php:877
+msgid "Counter Value"
+msgstr ""
+
+#: inc/customizer.php:889
+msgid "Counter Icon"
+msgstr ""
+
+#: inc/customizer.php:895
+msgid "Clients Logo Section"
+msgstr ""
+
+#: inc/customizer.php:908
+msgid "Disable Logo Section "
+msgstr ""
+
+#: inc/customizer.php:922
+msgid "Client Logo Title / SubTitle "
+msgstr ""
+
+#: inc/customizer.php:926 template-parts/section-logo.php:11
+msgid "We are Associated with"
+msgstr ""
+
+#: inc/customizer.php:939 template-parts/section-logo.php:12
+msgid "Meet our Awesome Clients"
+msgstr ""
+
+#: inc/customizer.php:960
+msgid "Upload Clients Logos "
+msgstr ""
+
+#: inc/customizer.php:971
+msgid "Upload Clients Logos"
+msgstr ""
+
+#: inc/customizer.php:977
+msgid "Testimonial Section"
+msgstr ""
+
+#: inc/customizer.php:990
+msgid "Disable Testimonial Section "
+msgstr ""
+
+#: inc/customizer.php:1004
+msgid "Testimonial Title / SubTitle "
+msgstr ""
+
+#: inc/customizer.php:1008 template-parts/section-testimonial.php:17
+msgid "Testimonials"
+msgstr ""
+
+#: inc/customizer.php:1021 template-parts/section-testimonial.php:18
+msgid "What our client says"
+msgstr ""
+
+#: inc/customizer.php:1041
+msgid "Testimonial Pages"
+msgstr ""
+
+#: inc/customizer.php:1053
+msgid "Select the Pages"
+msgstr ""
+
+#: inc/customizer.php:1054
+msgid "Select Some Pages"
+msgstr ""
+
+#: inc/customizer.php:1060
+msgid "Blog Section"
+msgstr ""
+
+#: inc/customizer.php:1073
+msgid "Disable Blog Section "
+msgstr ""
+
+#: inc/customizer.php:1087
+msgid "Blog Title / SubTitle "
+msgstr ""
+
+#: inc/customizer.php:1091 template-parts/section-blog.php:11
+msgid "Latest blogs"
+msgstr ""
+
+#: inc/customizer.php:1104 template-parts/section-blog.php:12
+msgid "Check out the latest post from our blog"
+msgstr ""
+
+#: inc/customizer.php:1124
+msgid "Blog Count/Category"
+msgstr ""
+
+#: inc/customizer.php:1135
+msgid "Number of Posts to show"
+msgstr ""
+
+#: inc/customizer.php:1154
+msgid "Contact Section"
+msgstr ""
+
+#: inc/customizer.php:1167
+msgid "Disable Contact Section "
+msgstr ""
+
+#: inc/customizer.php:1181
+msgid "Contact Title / SubTitle "
+msgstr ""
+
+#: inc/customizer.php:1185 template-parts/section-contact.php:13
+msgid "Contact Us"
+msgstr ""
+
+#: inc/customizer.php:1198 template-parts/section-contact.php:14
+msgid "We would love to hear from you"
+msgstr ""
+
+#: inc/customizer.php:1217
+msgid "Contact Section Background"
+msgstr ""
+
+#: inc/customizer.php:1229
+msgid "Recommended Image Size: 1800X800px"
+msgstr ""
+
+#: inc/customizer.php:1239
+msgid "Contact Details"
+msgstr ""
+
+#: inc/customizer.php:1250
+msgid "Contact Form ShortCode"
+msgstr ""
+
+#: inc/customizer.php:1251
+msgid ""
+"Add shortcode for Contact form or go to to widget page to add your own "
+"widget."
+msgstr ""
+
+#: inc/customizer.php:1255 template-parts/section-contact.php:42
+msgid "Contact us on the detail given below"
+msgstr ""
+
+#: inc/customizer.php:1263
+msgid "Contact Detail"
+msgstr ""
+
+#: inc/customizer.php:1267 template-parts/section-contact.php:43
+msgid "Address: 2400 South Avenue"
+msgstr ""
+
+#: inc/customizer.php:1275
+msgid "Contact Address"
+msgstr ""
+
+#: inc/customizer.php:1279 template-parts/section-contact.php:44
+msgid "Phone: +928 336 2000"
+msgstr ""
+
+#: inc/customizer.php:1287
+msgid "Phone"
+msgstr ""
+
+#: inc/customizer.php:1291 template-parts/section-contact.php:45
+msgid "Email: info@website.com"
+msgstr ""
+
+#: inc/customizer.php:1303 template-parts/section-contact.php:46
+msgid "Website: http://hashthemes.com"
+msgstr ""
+
+#: inc/customizer.php:1322
+msgid "Social Icons"
+msgstr ""
+
+#: inc/customizer.php:1335
+msgid "Facebook"
+msgstr ""
+
+#: inc/customizer.php:1348
+msgid "Twitter"
+msgstr ""
+
+#: inc/customizer.php:1361
+msgid "Pinterest"
+msgstr ""
+
+#: inc/customizer.php:1374
+msgid "Youtube"
+msgstr ""
+
+#: inc/customizer.php:1387
+msgid "Linkedin"
+msgstr ""
+
+#: inc/customizer.php:1392 inc/customizer.php:1405
+msgid "Copyright Text"
+msgstr ""
+
+#: inc/customizer.php:1541
+msgid "Add/Edit Gallery"
+msgstr ""
+
+#: inc/customizer.php:1542
+msgid "Clear"
+msgstr ""
+
+#: inc/hashone-metabox.php:16
+msgid "Sidebar Layout"
+msgstr ""
+
+#: inc/breadcrumb.php:255
+msgid "Browse:"
+msgstr ""
+
+#: inc/breadcrumb.php:256
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/breadcrumb.php:257
+msgid "Home"
+msgstr ""
+
+#: inc/breadcrumb.php:258
+msgid "404 Not Found"
+msgstr ""
+
+#: inc/breadcrumb.php:259
+msgid "Archives"
+msgstr ""
+
+#. %s is the search query.
+#: inc/breadcrumb.php:261
+#, php-format
+msgid "Search results for: %s"
+msgstr ""
+
+#. %s is the page number.
+#: inc/breadcrumb.php:263
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#. %s is the page number.
+#: inc/breadcrumb.php:265
+#, php-format
+msgid "Comment Page %s"
+msgstr ""
+
+#. Minute archive title. %s is the minute time format.
+#: inc/breadcrumb.php:267
+#, php-format
+msgid "Minute %s"
+msgstr ""
+
+#. Weekly archive title. %s is the week date format.
+#: inc/breadcrumb.php:269
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: inc/breadcrumb.php:727
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: inc/breadcrumb.php:744
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: inc/breadcrumb.php:761
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: inc/breadcrumb.php:777 inc/breadcrumb.php:806 inc/breadcrumb.php:833
+#: inc/breadcrumb.php:860 inc/breadcrumb.php:1197
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/breadcrumb.php:778 inc/breadcrumb.php:834 inc/breadcrumb.php:1201
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: inc/breadcrumb.php:779 inc/breadcrumb.php:1205
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: inc/breadcrumb.php:807
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: inc/hashone-functions.php:113
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/hashone-functions.php:115 inc/template-tags.php:69
+#: template-parts/content-page.php:22
+msgid "Edit"
+msgstr ""
+
+#. translators: 1: comment date, 2: comment time
+#: inc/hashone-functions.php:127
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/template-tags.php:22
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:29
+#, php-format
+msgid "No %s"
+msgstr ""
+
+#: inc/template-tags.php:29 inc/template-tags.php:31
+msgid "Comments"
+msgstr ""
+
+#: inc/template-tags.php:33
+#, php-format
+msgid "1 %s"
+msgstr ""
+
+#: inc/template-tags.php:53
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:59
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:65
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:65
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:65
+msgid "% Comments"
+msgstr ""
+
+#: welcome/welcome.php:25
+msgid "Getting Started"
+msgstr ""
+
+#: welcome/welcome.php:26 welcome/sections/recommended_plugins.php:6
+msgid "Recommended Plugins"
+msgstr ""
+
+#: welcome/welcome.php:27
+msgid "Support"
+msgstr ""
+
+#: welcome/welcome.php:66
+msgid ""
+"Welcome! Thank you for choosing HashOne. Please make sure you visit Settings "
+"Page to get started with HashOne theme."
+msgstr ""
+
+#: welcome/welcome.php:67
+msgid "Let's Get Started"
+msgstr ""
+
+#: welcome/welcome.php:75
+msgid "Welcome"
+msgstr ""
+
+#: welcome/welcome.php:75
+msgid "HashOne Settings"
+msgstr ""
+
+#. 1-theme name, 2-theme version
+#: welcome/welcome.php:88
+#, php-format
+msgid "Welcome to %1$s - Version %2$s"
+msgstr ""
+
+#: welcome/welcome.php:90
+msgid ""
+"HashOne is a powerful multipurpose WordPress Theme that is packed with lots "
+"of features for creating a full packaged website that can be used by a "
+"business, restaurant, freelancers, photographers, bloggers, education firms, "
+"non-profit organization and creative agencies. The theme is fully responsive "
+"and mobile friendly and has lots of customization possibilities with various "
+"home page sections to showcase varieties of content. The theme can be used "
+"to set up a single page website with animated content that adds charm to the "
+"website with additional parallax effect. The theme is SEO friendly, "
+"Translation ready, Woo Commerce compatible and integrates seamlessly with "
+"almost all popular WordPress Plugins."
+msgstr ""
+
+#: welcome/welcome.php:124
+msgid "Installing Demo Importer Plugin"
+msgstr ""
+
+#: welcome/welcome.php:125
+msgid "Activating Demo Importer Plugin"
+msgstr ""
+
+#: welcome/welcome.php:126 welcome/sections/getting_started.php:47
+msgid "Go to Demo Importer Page"
+msgstr ""
+
+#: welcome/welcome.php:128
+msgid "Error! Reload the page and try again."
+msgstr ""
+
+#: template-parts/content-single.php:15 template-parts/content-page.php:15
+#: template-parts/content.php:50
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-none.php:11
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:17
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:21
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:26
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content.php:42
+msgid "Read More"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: template-parts/content.php:46
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: template-parts/section-blog.php:51
+msgid "Portfolio Thumb"
+msgstr ""
+
+#: template-parts/section-logo.php:33
+msgid "Logo"
+msgstr ""
+
+#. Name of the template
+msgid "Home Page"
+msgstr ""
+
+#. Theme Name
+#: welcome/sections/support.php:7
+#, php-format
+msgid ""
+"Read the detailed documentation of the theme. The documentation contain all "
+"the necessary information required to setup the theme %s."
+msgstr ""
+
+#: welcome/sections/support.php:9
+msgid "Read Full Documentation"
+msgstr ""
+
+#: welcome/sections/support.php:13 welcome/sections/support.php:15
+msgid "Create Support Tickets"
+msgstr ""
+
+#: welcome/sections/support.php:14
+msgid ""
+"Still having problem after reading all the documentation? No Problem!! "
+"Please create a support ticket. Our dedicated support team will help you to "
+"solve your problem"
+msgstr ""
+
+#: welcome/sections/recommended_plugins.php:7
+msgid ""
+"Please Install all the plugins. Although these plugins are complementary, we "
+"encourage to install theme to use the theme to full extent"
+msgstr ""
+
+#: welcome/sections/recommended_plugins.php:27
+msgid "Activate"
+msgstr ""
+
+#: welcome/sections/recommended_plugins.php:30
+msgid "Installed"
+msgstr ""
+
+#: welcome/sections/recommended_plugins.php:34
+msgid "Install Now"
+msgstr ""
+
+#: welcome/sections/getting_started.php:4
+msgid "Step 1 - Create a new page with \"Home Page\" Template"
+msgstr ""
+
+#: welcome/sections/getting_started.php:6
+msgid "Create a new page (any title like Home )"
+msgstr ""
+
+#: welcome/sections/getting_started.php:7
+msgid ""
+"In right column, select \"Home Page\" for the option Page Attributes > "
+"Template"
+msgstr ""
+
+#: welcome/sections/getting_started.php:8
+msgid "Click on Publish"
+msgstr ""
+
+#: welcome/sections/getting_started.php:10
+msgid "Create New Page"
+msgstr ""
+
+#: welcome/sections/getting_started.php:14
+msgid "Step 2 - Set \"Your homepage displays\" to \"A Static Page\""
+msgstr ""
+
+#: welcome/sections/getting_started.php:16
+msgid "Go to Appearance > Customize > General settings > Static Front Page"
+msgstr ""
+
+#: welcome/sections/getting_started.php:17
+msgid "Set \"Your homepage displays\" to \"A Static Page\""
+msgstr ""
+
+#: welcome/sections/getting_started.php:18
+msgid "In \"Homepage\", select the page that you created in the step 1"
+msgstr ""
+
+#: welcome/sections/getting_started.php:19
+msgid "Save changes"
+msgstr ""
+
+#: welcome/sections/getting_started.php:21
+msgid "Assign Static Page"
+msgstr ""
+
+#: welcome/sections/getting_started.php:25
+msgid "Step 3 - Customizer Options Panel"
+msgstr ""
+
+#: welcome/sections/getting_started.php:26
+msgid ""
+"Now go to Customizer Page. Using the WordPress Customizer you can easily set "
+"up the home page and customize the theme."
+msgstr ""
+
+#: welcome/sections/getting_started.php:27
+msgid "Go to Customizer Panels"
+msgstr ""
+
+#: welcome/sections/getting_started.php:33
+msgid "Demo Importer"
+msgstr ""
+
+#: welcome/sections/getting_started.php:33
+msgid "View Demo"
+msgstr ""
+
+#: welcome/sections/getting_started.php:34
+msgid "HashOne Demo"
+msgstr ""
+
+#: welcome/sections/getting_started.php:44
+msgid "Activate Demo Importer Plugin"
+msgstr ""
+
+#: welcome/sections/getting_started.php:51
+msgid "Install Demo Importer Plugin"
+msgstr ""
+
+#: welcome/sections/getting_started.php:54
+msgid "Or you can get started by importing the demo with just one click."
+msgstr ""
+
+#: welcome/sections/getting_started.php:55
+#, php-format
+msgid ""
+"Click on the button below to install and activate HashThemes Demo Importer "
+"plugin. For more detail documentation on how the demo importer works, click "
+"%s."
+msgstr ""
+
+#: welcome/sections/getting_started.php:55
+msgid "here"
+msgstr ""
+
+#. Name of the theme
+msgid "HashOne"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"HashOne is a powerful multipurpose WordPress Theme that is packed with lots "
+"of features for creating a full packaged website that can be used by a "
+"business, restaurant, freelancers, photographers, bloggers, education firms, "
+"non-profit organization and creative agencies. The theme is fully responsive "
+"and mobile friendly and has lots of customization possibilities with various "
+"home page sections to showcase varieties of content. The theme can be used "
+"to set up a single page website with animated content that adds charm to the "
+"website with additional parallax effect. The theme is SEO friendly, "
+"Translation ready, Woo Commerce compatible and integrates seamlessly with "
+"almost all popular WordPress Plugins. For Demo https://demo.hashthemes."
+"com/hashone"
+msgstr ""
+
+#. URI of the theme
+msgid "https://hashthemes.com/wordpress-theme/hashone/"
+msgstr ""
+
+#. Author of the theme
+msgid "HashThemes"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://hashthemes.com"
+msgstr ""
