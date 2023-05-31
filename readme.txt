@@ -9,7 +9,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, c
 
 Requires at least: 5.0
 Tested up to: 6.2
-Stable tag: 1.3.0
+Stable tag: 1.3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -26,7 +26,7 @@ Hash One is a beautiful WordPress theme with lots of featured packed option to c
 
 
 == Changelog ==
-= 1.3.1 - Jun 1, 2023 =
+= 1.3.2 - Jun 1, 2023 =
 * Security issue fixed
 
 = 1.2.9 - Feb 21, 2022 =
