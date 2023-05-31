@@ -178,6 +178,7 @@ if (!class_exists('Hashone_Welcome')) :
                     'importer_page' => esc_html__('Go to Demo Importer Page', 'hashone'),
                     'importer_url' => admin_url('themes.php?page=hdi-demo-importer'),
                     'error' => esc_html__('Error! Reload the page and try again.', 'hashone'),
+                    'ajax_nonce' => wp_create_nonce('hashone_activate_hdi_plugin')
                 );
                 wp_enqueue_style('hashone-welcome', get_template_directory_uri() . '/welcome/css/welcome.css', array(), HASHONE_VERSION);
                 wp_enqueue_script('hashone-welcome', get_template_directory_uri() . '/welcome/js/welcome.js', array('plugin-install', 'updates'), HASHONE_VERSION, true);
@@ -231,6 +232,12 @@ if (!class_exists('Hashone_Welcome')) :
 
         /** Ajax Plugin Activation */
         public function activate_plugin() {
+            if (!current_user_can('manage_options')) {
+                return;
+            }
+
+            check_ajax_referer('hashone_activate_hdi_plugin', 'security');
+
             $slug = isset($_POST['slug']) ? $_POST['slug'] : '';
             $file = isset($_POST['file']) ? $_POST['file'] : '';
             $success = false;

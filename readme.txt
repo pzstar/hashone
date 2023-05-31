@@ -1,6 +1,6 @@
 === HashOne ===
 
-HashOne WordPress Theme, Copyright (C) 2022, HashThemes
+HashOne WordPress Theme, Copyright (C) 2023, HashThemes
 HashOne is distributed under the terms of the GNU GPL
 
 Contributors: HashThemes
@@ -8,7 +8,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, c
 
 
 Requires at least: 5.0
-Tested up to: 5.9
+Tested up to: 6.2
 Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -26,6 +26,9 @@ Hash One is a beautiful WordPress theme with lots of featured packed option to c
 
 
 == Changelog ==
+= 1.3.1 - Jun 1, 2023 =
+* Security issue fixed
+
 = 1.2.9 - Feb 21, 2022 =
 * Welcome page refinements
 
