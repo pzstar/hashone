@@ -192,13 +192,8 @@ if (!function_exists('hashone_register_required_plugins')) {
                 'required' => false,
             ),
             array(
-                'name' => 'Elementor',
-                'slug' => 'elementor',
-                'required' => false,
-            ),
-            array(
-                'name' => 'Hash Elements',
-                'slug' => 'hash-elements',
+                'name' => 'Hash Form',
+                'slug' => 'hash-form',
                 'required' => false,
             ),
         );

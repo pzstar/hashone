@@ -29,12 +29,14 @@ if (get_theme_mod('hashone_disable_portfolio_sec') != 'on') {
                 foreach ($hashone_portfolio_cat_array as $hashone_portfolio_cat_single) {
                     $category_slug = "";
                     $category_slug = get_category($hashone_portfolio_cat_single);
-                    $category_slug = 'hashone-portfolio-' . $category_slug->term_id;
-                    ?>
-                    <div class="hs-portfolio-cat-name" data-filter=".<?php echo esc_attr($category_slug); ?>">
-                        <?php echo esc_html(get_cat_name($hashone_portfolio_cat_single)); ?>
-                    </div>
-                    <?php
+                    if ($category_slug) {
+                        $category_slug = 'hashone-portfolio-' . $category_slug->term_id;
+                        ?>
+                        <div class="hs-portfolio-cat-name" data-filter=".<?php echo esc_attr($category_slug); ?>">
+                            <?php echo esc_html(get_cat_name($hashone_portfolio_cat_single)); ?>
+                        </div>
+                        <?php
+                    }
                 }
                 ?>
             </div>
