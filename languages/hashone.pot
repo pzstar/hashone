@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: HashOne 1.0.0\n"
 "Report-Msgid-Bugs-To: http://hashthemes.com\n"
-"POT-Creation-Date: 2020-03-31 11:04+0000\n"
+"POT-Creation-Date: 2025-01-31 11:20+0000\n"
 "POT-Revision-Date: Tue Aug 09 2016 22:16:59 GMT+0545 (Nepal Standard Time)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Hash Themes <hashthemes@gmail.com>\n"
@@ -23,93 +23,559 @@ msgstr ""
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: functions.php:27
-msgid "Primary Menu"
+#: inc/template-tags.php:65
+msgid "% Comments"
 msgstr ""
 
-#: functions.php:82
-msgid "Right Sidebar"
+#. 1: comment date, 2: comment time
+#: inc/hashone-functions.php:127
+#, php-format
+msgid "%1$s at %2$s"
 msgstr ""
 
-#: functions.php:84 functions.php:94
-msgid "Add widgets here to appear in your sidebar."
+#: footer.php:66
+#, php-format
+msgid "%1$s by %2$s"
 msgstr ""
 
-#: functions.php:92
-msgid "Left Sidebar"
+#. 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:3447
+#, php-format
+msgid "%1$s installed and activated successfully."
 msgstr ""
 
-#: functions.php:102
-msgid "Contact Form"
+#. 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:3455
+#, php-format
+msgid "%1$s installed successfully."
 msgstr ""
 
-#: functions.php:104
-msgid "Add widgets here to appear in the Contact Section of the Home Page."
+#: welcome/welcome.php:111
+#, php-format
+msgid ""
+"%1$s is now installed and ready to use. You can start either by importing "
+"the ready made demo or get started by customizing it your self."
 msgstr ""
 
-#: functions.php:112
-msgid "About Us"
+#: welcome/sections/getting_started.php:27
+#, php-format
+msgid "%s Demo"
 msgstr ""
 
-#: functions.php:114
-msgid "Add widgets here to appear in the About Section of the Home Page."
+#: welcome/welcome.php:157
+#, php-format
+msgid "%s Settings"
 msgstr ""
 
-#: functions.php:122
-msgid "Footer One"
+#: inc/customizer.php:20
+msgid "-- Don't Replace --"
 msgstr ""
 
-#: functions.php:124 functions.php:134 functions.php:144 functions.php:154
-msgid "Add widgets here to appear in your Footer."
+#: inc/template-tags.php:33
+#, php-format
+msgid "1 %s"
 msgstr ""
 
-#: functions.php:132
-msgid "Footer Two"
+#: inc/template-tags.php:65
+msgid "1 Comment"
 msgstr ""
 
-#: functions.php:142
-msgid "Footer Three"
+#: welcome/sections/free_vs_pro.php:38
+msgid "1 Demos"
 msgstr ""
 
-#: functions.php:152
-msgid "Footer Four"
+#: welcome/sections/free_vs_pro.php:35
+msgid "1) One Click Demo Import"
 msgstr ""
 
-#. Translators: If there are characters in your language that are not supported
-#. by Open Sans, translate this to 'off'. Do not translate into your own language.
-#: functions.php:182
-msgctxt "Open Sans font: on or off"
-msgid "on"
+#: welcome/sections/free_vs_pro.php:107
+msgid "10) Advanced Typography Options for Specific Sections"
 msgstr ""
 
-#. Translators: If there are characters in your language that are not supported
-#. by Inconsolata, translate this to 'off'. Do not translate into your own language.
-#: functions.php:190
-msgctxt "Roboto Condensed font: on or off"
-msgid "on"
+#: welcome/sections/free_vs_pro.php:115
+msgid "11) Color Options"
 msgstr ""
 
-#. Translators: To add an additional character subset specific to your language,
-#. translate this to 'greek', 'cyrillic', 'devanagari' or 'vietnamese'. Do not translate into your own language.
-#: functions.php:198
-msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
-msgid "no-subset"
+#: welcome/sections/free_vs_pro.php:123
+msgid "12) Front Page Section Reorder"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:131
+msgid "13) Front Page Unlimited Blocks for Each Section"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:139
+msgid ""
+"14) Front Page Video Background, Image Motion Background, Gradient Background"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:147
+msgid "15) Front Page Sections"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:155
+msgid "16) Front Page Blocks - Style Variations"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:177
+msgid "17) Front Page Shape Dividers"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:185
+msgid "18) Front Page Sections with Full Screen Height"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:193
+msgid "19) Front Page Slider"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:43
+msgid "2) GDPR Compliance & Cookies Consent"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:201
+msgid "20) Top Header Bar"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:209
+msgid "21) Add New Widget Area"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:217
+msgid "22) Custom Widgets"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:225
+msgid "23) PreLoader Option"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:233
+msgid "24) Sidebar Layout Options"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:241
+msgid "25) Advanced Blog Settings"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:249
+msgid "26) Blog Layouts"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:263
+msgid "27) Reorder and Show/Hide Elements of Single Post"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:271
+msgid ""
+"28) Author Box, Social Share, and Related Post at the Bottom of the Single "
+"Post"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:279
+msgid "29) Unique Header Background for Each Post and Page"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:51
+msgid "3) Maintenance Mode"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:287
+msgid "30) Different Background and Text Color for Each Post and Page"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:295
+msgid "31) Hide Header and Footer for Each Post and Page"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:303
+msgid "32) Advanced Footer Setting"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:311
+msgid "33) Remove Footer Credit Text"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:319
+msgid "34) Google Map Option"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:327
+msgid "35) Icon Picker"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:341
+msgid "36) WooCommerce Compatible"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:349
+msgid "37) RTL Ready"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:357
+msgid "38) Multilingual Ready"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:365
+msgid "39) Translation Ready"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:59
+msgid "4) Elementor Compatible"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:374
+msgid "40) Search Engine Optimization"
 msgstr ""
 
 #: 404.php:12
 msgid "404 Error"
 msgstr ""
 
-#: 404.php:19
-msgid "Oops! That page can&rsquo;t be found."
+#: inc/breadcrumb.php:258
+msgid "404 Not Found"
 msgstr ""
 
-#: archive.php:42 search.php:38
-msgid "Prev"
+#: welcome/sections/free_vs_pro.php:382
+msgid "41) Major Browser Compatible"
 msgstr ""
 
-#: archive.php:43 search.php:39
-msgid "Next"
+#: welcome/sections/free_vs_pro.php:390
+msgid "42) Responsive - Mobile Friendly"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:398
+msgid "43) Fast and Friendly Support"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:39
+msgid "5 More Demos"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:67
+msgid "5) Elementor Widgets"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:75
+msgid "6) Elementor Section Extenders"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:83
+msgid "7) Elementor Template/Section Importer"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:91
+msgid "8) Multiple Header Layouts and Settings"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:99
+msgid "9) Mega Menu"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:186
+msgid ""
+"A front page section that covers the full screen despite having less content."
+" It is useful for a one-page website."
+msgstr ""
+
+#: functions.php:130
+msgid "About Us"
+msgstr ""
+
+#: inc/customizer.php:254
+msgid "About Us Page"
+msgstr ""
+
+#: inc/customizer.php:227
+msgid "About Us Section"
+msgstr ""
+
+#: welcome/welcome.php:148
+msgid "Action Failed. Something is Wrong."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2658
+#: welcome/sections/recommended_plugins.php:28
+msgid "Activate"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: inc/class-tgm-plugin-activation.php:2550
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: welcome/welcome.php:286
+msgid "Activate Demo Importer Plugin"
+msgstr ""
+
+#: welcome/welcome.php:189
+msgid "Activating Demo Importer Plugin"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2274
+msgid "Active"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:391
+msgid "Adapts to any screen size and displays beautifully."
+msgstr ""
+
+#. To add an additional character subset specific to your language,
+#. translate this to 'greek', 'cyrillic', 'devanagari' or 'vietnamese'. Do not translate into your own language.
+#: functions.php:216
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#: inc/customizer.php:1258
+msgid ""
+"Add shortcode for Contact form or go to to widget page to add your own "
+"widget."
+msgstr ""
+
+#: functions.php:132
+msgid "Add widgets here to appear in the About Section of the Home Page."
+msgstr ""
+
+#: functions.php:122
+msgid "Add widgets here to appear in the Contact Section of the Home Page."
+msgstr ""
+
+#: functions.php:142 functions.php:152 functions.php:162 functions.php:172
+msgid "Add widgets here to appear in your Footer."
+msgstr ""
+
+#: functions.php:102 functions.php:112
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: inc/customizer.php:1548
+msgid "Add/Edit Gallery"
+msgstr ""
+
+#: inc/customizer.php:1274 template-parts/section-contact.php:43
+msgid "Address: 2400 South Avenue"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:63 welcome/sections/free_vs_pro.php:119
+#: welcome/sections/free_vs_pro.php:197 welcome/sections/free_vs_pro.php:237
+#: welcome/sections/free_vs_pro.php:245 welcome/sections/free_vs_pro.php:337
+#: welcome/sections/free_vs_pro.php:345
+msgid "Advanced"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3448
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3456
+msgid "All installations have been completed."
+msgstr ""
+
+#. 1: dashboard link.
+#: inc/class-tgm-plugin-activation.php:376
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#. 1: plugin name, 2: error message.
+#: inc/class-tgm-plugin-activation.php:3439
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/breadcrumb.php:259
+msgid "Archives"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2423
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2448
+msgid "Available version:"
+msgstr ""
+
+#: inc/customizer.php:167
+msgid "Background Image"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:62 welcome/sections/free_vs_pro.php:118
+#: welcome/sections/free_vs_pro.php:196 welcome/sections/free_vs_pro.php:236
+#: welcome/sections/free_vs_pro.php:244 welcome/sections/free_vs_pro.php:336
+#: welcome/sections/free_vs_pro.php:344
+msgid "Basic"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:364
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:358
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:361
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/customizer.php:52
+msgid "Black"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:168
+msgid "Blog block - 4 styles"
+msgstr ""
+
+#: inc/customizer.php:155
+msgid "Blog Content Format"
+msgstr ""
+
+#: inc/customizer.php:1131
+msgid "Blog Count/Category"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:252
+msgid "Blog Layout 1 Demo"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:253
+msgid "Blog Layout 2 Demo"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:254
+msgid "Blog Layout 3 Demo"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:255
+msgid "Blog Layout 4 Demo"
+msgstr ""
+
+#: inc/customizer.php:1067
+msgid "Blog Section"
+msgstr ""
+
+#: inc/customizer.php:145
+msgid "Blog Settings"
+msgstr ""
+
+#: inc/customizer.php:1094
+msgid "Blog Title / SubTitle "
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:366
+msgid "Both the free and pro versions are fully translation ready."
+msgstr ""
+
+#: inc/breadcrumb.php:256
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/breadcrumb.php:255
+msgid "Browse:"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:25 welcome/sections/free_vs_pro.php:410
+msgid "Buy Now ($65 only)"
+msgstr ""
+
+#: inc/customizer.php:720 template-parts/section-team.php:40
+msgid "CEO"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:264
+msgid ""
+"Change the position(reorder) the single post elements like post meta, "
+"featured image, content, category, tags, and social share icons and place "
+"them in the order you want. You can disable it individually if you do not "
+"want to show it."
+msgstr ""
+
+#: inc/customizer.php:485 template-parts/section-portfolio.php:11
+msgid "Check our beautiful works we do"
+msgstr ""
+
+#: inc/customizer.php:386 template-parts/section-feature.php:18
+msgid "Check out cool featured of the theme"
+msgstr ""
+
+#: inc/customizer.php:1111 template-parts/section-blog.php:12
+msgid "Check out the latest post from our blog"
+msgstr ""
+
+#: welcome/sections/footer.php:4
+#, php-format
+msgid ""
+"Check out the websites that you can create with the premium version of the "
+"%s Theme. These demos can be imported with just one click in the premium "
+"version."
+msgstr ""
+
+#: inc/customizer.php:316
+msgid "Check to Disable"
+msgstr ""
+
+#: inc/customizer.php:1549
+msgid "Clear"
+msgstr ""
+
+#: welcome/welcome.php:123
+msgid "Click below to install and active HashThemes Demo Importer Plugin."
+msgstr ""
+
+#: welcome/sections/getting_started.php:12
+#, php-format
+msgid "Click on \"%s\" and turn on the option for \"Enable FrontPage\" Setting"
+msgstr ""
+
+#: welcome/sections/getting_started.php:32
+#, php-format
+msgid ""
+"Click on the button below to install and activate the HashThemes Demo "
+"Importer plugin. For more detailed documentation on how the demo importer "
+"works, click %s."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:169
+msgid "Client Logo - 4 styles"
+msgstr ""
+
+#: inc/customizer.php:929
+msgid "Client Logo Title / SubTitle "
+msgstr ""
+
+#: inc/customizer.php:902
+msgid "Clients Logo Section"
+msgstr ""
+
+#: inc/customizer.php:173
+msgid "Colors"
+msgstr ""
+
+#: comments.php:78 inc/template-tags.php:33
+msgid "Comment"
+msgstr ""
+
+#. %s is the page number.
+#: inc/breadcrumb.php:265
+#, php-format
+msgid "Comment Page %s"
+msgstr ""
+
+#: inc/template-tags.php:29 inc/template-tags.php:31
+msgid "Comments"
+msgstr ""
+
+#: comments.php:55
+msgid "Comments are closed."
 msgstr ""
 
 #: comments.php:25
@@ -120,688 +586,106 @@ msgid_plural "%1$s Comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:34
-msgid "Older Comments"
+#: welcome/welcome.php:110
+msgid "Congratulations!"
 msgstr ""
 
-#: comments.php:35
-msgid "Newer Comments"
-msgstr ""
-
-#: comments.php:55
-msgid "Comments are closed."
-msgstr ""
-
-#: comments.php:66
-msgid "Name"
-msgstr ""
-
-#: comments.php:69 inc/customizer.php:1299
-msgid "Email"
-msgstr ""
-
-#: comments.php:72 inc/customizer.php:1311
-msgid "Website"
-msgstr ""
-
-#: comments.php:78 inc/template-tags.php:33
-msgid "Comment"
-msgstr ""
-
-#: search.php:12
-#, php-format
-msgid "Search Results for: %s"
-msgstr ""
-
-#: footer.php:56 inc/customizer.php:1396
-#, php-format
-msgid "© Copyright 2020 %s"
-msgstr ""
-
-#: footer.php:64
-msgid "WordPress Theme"
-msgstr ""
-
-#: footer.php:66
-#, php-format
-msgid "%1$s by %2$s"
-msgstr ""
-
-#: inc/customizer.php:20
-msgid "-- Don't Replace --"
-msgstr ""
-
-#: inc/customizer.php:52
-msgid "Black"
-msgstr ""
-
-#: inc/customizer.php:53
-msgid "White"
-msgstr ""
-
-#: inc/customizer.php:59 welcome/sections/support.php:3
-msgid "Documentation"
-msgstr ""
-
-#: inc/customizer.php:61
-msgid "View"
-msgstr ""
-
-#: inc/customizer.php:66
-msgid "Import Demo Content"
-msgstr ""
-
-#: inc/customizer.php:68
-msgid "Import"
-msgstr ""
-
-#: inc/customizer.php:74
-msgid "General Settings"
-msgstr ""
-
-#: inc/customizer.php:80
-msgid "Static Front Page"
-msgstr ""
-
-#: inc/customizer.php:82
-msgid "Your theme supports a static front page."
-msgstr ""
-
-#: inc/customizer.php:87
-msgid "Site Title & Tagline"
-msgstr ""
-
-#: inc/customizer.php:93
-msgid "Header Logo"
-msgstr ""
-
-#: inc/customizer.php:99
-msgid "Header Background"
-msgstr ""
-
-#: inc/customizer.php:113
-msgid "Header Background Color"
-msgstr ""
-
-#: inc/customizer.php:115
-msgid "Only appears in sticky header in featured frontpage."
-msgstr ""
-
-#: inc/customizer.php:120 inc/customizer.php:130
-msgid "Page Header Banner"
-msgstr ""
-
-#: inc/customizer.php:133
-msgid "Recommended Image Size: 1800X400px"
-msgstr ""
-
-#: inc/customizer.php:138
-msgid "Blog Settings"
-msgstr ""
-
-#: inc/customizer.php:148
-msgid "Blog Content Format"
-msgstr ""
-
-#: inc/customizer.php:153
-msgid "Excerpt"
-msgstr ""
-
-#: inc/customizer.php:154
-msgid "Full Content"
-msgstr ""
-
-#: inc/customizer.php:160
-msgid "Background Image"
-msgstr ""
-
-#: inc/customizer.php:166
-msgid "Colors"
-msgstr ""
-
-#: inc/customizer.php:172
-msgid "Home Page Sections"
-msgstr ""
-
-#: inc/customizer.php:177
-msgid "Slider Section"
-msgstr ""
-
-#: inc/customizer.php:191
-msgid "Slider "
-msgstr ""
-
-#: inc/customizer.php:202 inc/customizer.php:259 inc/customizer.php:415
-#: inc/customizer.php:614 inc/customizer.php:709
-msgid "Select a Page"
-msgstr ""
-
-#: inc/customizer.php:213
-msgid "Note:"
-msgstr ""
-
-#: inc/customizer.php:214
-msgid ""
-"The Page featured image works as a slider banner and the title & content "
-"work as a slider caption."
-msgstr ""
-
-#: inc/customizer.php:214
-msgid "Recommended Image Size: 1900X600"
-msgstr ""
-
-#: inc/customizer.php:220
-msgid "About Us Section"
-msgstr ""
-
-#: inc/customizer.php:233
-msgid "Disable About Section "
-msgstr ""
-
-#: inc/customizer.php:235 inc/customizer.php:350 inc/customizer.php:449
-#: inc/customizer.php:530 inc/customizer.php:647 inc/customizer.php:779
-#: inc/customizer.php:910 inc/customizer.php:992 inc/customizer.php:1075
-#: inc/customizer.php:1169
-msgid "Yes"
-msgstr ""
-
-#: inc/customizer.php:236 inc/customizer.php:351 inc/customizer.php:450
-#: inc/customizer.php:531 inc/customizer.php:648 inc/customizer.php:780
-#: inc/customizer.php:911 inc/customizer.php:993 inc/customizer.php:1076
-#: inc/customizer.php:1170
-msgid "No"
-msgstr ""
-
-#: inc/customizer.php:247
-msgid "About Us Page"
-msgstr ""
-
-#: inc/customizer.php:269
-msgid "Progress Bars"
-msgstr ""
-
-#: inc/customizer.php:281
-msgid "Replace Progress Bar by widget"
-msgstr ""
-
-#: inc/customizer.php:293
-msgid "Progress Bar "
-msgstr ""
-
-#: inc/customizer.php:297 template-parts/section-about.php:41
-msgid "Progress Bar Title"
-msgstr ""
-
-#: inc/customizer.php:309
-msgid "Check to Disable"
-msgstr ""
-
-#: inc/customizer.php:317 inc/customizer.php:375 inc/customizer.php:474
-#: inc/customizer.php:555 inc/customizer.php:672 inc/customizer.php:804
-#: inc/customizer.php:864 inc/customizer.php:935 inc/customizer.php:1017
-#: inc/customizer.php:1100 inc/customizer.php:1194
-msgid "Title"
-msgstr ""
-
-#: inc/customizer.php:328
-msgid "Percentage"
-msgstr ""
-
-#: inc/customizer.php:335
-msgid "Featured Section"
-msgstr ""
-
-#: inc/customizer.php:348
-msgid "Disable Featured Section "
-msgstr ""
-
-#: inc/customizer.php:362
-msgid "Featured Title / SubTitle "
-msgstr ""
-
-#: inc/customizer.php:366 template-parts/section-feature.php:17
-msgid "Our Features"
-msgstr ""
-
-#: inc/customizer.php:379 template-parts/section-feature.php:18
-msgid "Check out cool featured of the theme"
-msgstr ""
-
-#: inc/customizer.php:388 inc/customizer.php:487 inc/customizer.php:568
-#: inc/customizer.php:685 inc/customizer.php:817 inc/customizer.php:948
-#: inc/customizer.php:1030 inc/customizer.php:1113 inc/customizer.php:1207
-msgid "Sub Title"
-msgstr ""
-
-#: inc/customizer.php:403
-msgid "Featured Page "
-msgstr ""
-
-#: inc/customizer.php:427 inc/customizer.php:626
-msgid "FontAwesome Icon"
-msgstr ""
-
-#: inc/customizer.php:434
-msgid "Portfolio Section"
-msgstr ""
-
-#: inc/customizer.php:447
-msgid "Disable Portfolio Section "
-msgstr ""
-
-#: inc/customizer.php:461
-msgid "Portfolio Title/SubTitle"
-msgstr ""
-
-#: inc/customizer.php:465 template-parts/section-portfolio.php:10
-msgid "What we do it love"
-msgstr ""
-
-#: inc/customizer.php:478 template-parts/section-portfolio.php:11
-msgid "Check our beautiful works we do"
-msgstr ""
-
-#: inc/customizer.php:498
-msgid "Portfolio Category"
-msgstr ""
-
-#: inc/customizer.php:515
-msgid "Service Section"
-msgstr ""
-
-#: inc/customizer.php:528
-msgid "Disable Service Section "
-msgstr ""
-
-#: inc/customizer.php:542
-msgid "Serivce Title / SubTitle"
-msgstr ""
-
-#: inc/customizer.php:546 template-parts/section-service.php:19
-msgid "Why Choose Us"
-msgstr ""
-
-#: inc/customizer.php:559 template-parts/section-service.php:20
-msgid "Let us do all things for you"
-msgstr ""
-
-#: inc/customizer.php:579
-msgid "Service Left Banner Image"
-msgstr ""
-
-#: inc/customizer.php:591
-msgid "Image Size: 770X650px"
-msgstr ""
-
-#: inc/customizer.php:602
-msgid "Service Page "
-msgstr ""
-
-#: inc/customizer.php:632
-msgid "Team Section"
-msgstr ""
-
-#: inc/customizer.php:645
-msgid "Disable Team Section "
-msgstr ""
-
-#: inc/customizer.php:659
-msgid "Team Title / SubTitle "
-msgstr ""
-
-#: inc/customizer.php:663 template-parts/section-team.php:17
-msgid "Meet Our Team"
-msgstr ""
-
-#: inc/customizer.php:676 template-parts/section-team.php:18
-msgid "Experts who works for us"
-msgstr ""
-
-#: inc/customizer.php:697
-msgid "Team "
-msgstr ""
-
-#: inc/customizer.php:713 template-parts/section-team.php:40
-msgid "CEO"
-msgstr ""
-
-#: inc/customizer.php:721
-msgid "Team Member Designation"
-msgstr ""
-
-#: inc/customizer.php:733
-msgid "Facebook Url"
-msgstr ""
-
-#: inc/customizer.php:745
-msgid "Twitter Url"
-msgstr ""
-
-#: inc/customizer.php:757
-msgid "Linkedin Url"
-msgstr ""
-
-#: inc/customizer.php:764
-msgid "Counter Section"
-msgstr ""
-
-#: inc/customizer.php:777
-msgid "Disable Counter Section "
-msgstr ""
-
-#: inc/customizer.php:791
-msgid "Counter Title / SubTitle"
-msgstr ""
-
-#: inc/customizer.php:795 template-parts/section-counter.php:13
-msgid "OUR FACTS"
-msgstr ""
-
-#: inc/customizer.php:808 template-parts/section-counter.php:14
-msgid "Some Numbers that Speaks"
-msgstr ""
-
-#: inc/customizer.php:827
-msgid "Counter Section Background"
-msgstr ""
-
-#: inc/customizer.php:839
-msgid "Image Size: 1800X400px"
-msgstr ""
-
-#: inc/customizer.php:851
-msgid "Counter "
-msgstr ""
-
-#: inc/customizer.php:855 template-parts/section-counter.php:28
-msgid "Cups of Coffee"
-msgstr ""
-
-#: inc/customizer.php:877
-msgid "Counter Value"
-msgstr ""
-
-#: inc/customizer.php:889
-msgid "Counter Icon"
-msgstr ""
-
-#: inc/customizer.php:895
-msgid "Clients Logo Section"
-msgstr ""
-
-#: inc/customizer.php:908
-msgid "Disable Logo Section "
-msgstr ""
-
-#: inc/customizer.php:922
-msgid "Client Logo Title / SubTitle "
-msgstr ""
-
-#: inc/customizer.php:926 template-parts/section-logo.php:11
-msgid "We are Associated with"
-msgstr ""
-
-#: inc/customizer.php:939 template-parts/section-logo.php:12
-msgid "Meet our Awesome Clients"
-msgstr ""
-
-#: inc/customizer.php:960
-msgid "Upload Clients Logos "
-msgstr ""
-
-#: inc/customizer.php:971
-msgid "Upload Clients Logos"
-msgstr ""
-
-#: inc/customizer.php:977
-msgid "Testimonial Section"
-msgstr ""
-
-#: inc/customizer.php:990
-msgid "Disable Testimonial Section "
-msgstr ""
-
-#: inc/customizer.php:1004
-msgid "Testimonial Title / SubTitle "
-msgstr ""
-
-#: inc/customizer.php:1008 template-parts/section-testimonial.php:17
-msgid "Testimonials"
-msgstr ""
-
-#: inc/customizer.php:1021 template-parts/section-testimonial.php:18
-msgid "What our client says"
-msgstr ""
-
-#: inc/customizer.php:1041
-msgid "Testimonial Pages"
-msgstr ""
-
-#: inc/customizer.php:1053
-msgid "Select the Pages"
-msgstr ""
-
-#: inc/customizer.php:1054
-msgid "Select Some Pages"
-msgstr ""
-
-#: inc/customizer.php:1060
-msgid "Blog Section"
-msgstr ""
-
-#: inc/customizer.php:1073
-msgid "Disable Blog Section "
-msgstr ""
-
-#: inc/customizer.php:1087
-msgid "Blog Title / SubTitle "
-msgstr ""
-
-#: inc/customizer.php:1091 template-parts/section-blog.php:11
-msgid "Latest blogs"
-msgstr ""
-
-#: inc/customizer.php:1104 template-parts/section-blog.php:12
-msgid "Check out the latest post from our blog"
-msgstr ""
-
-#: inc/customizer.php:1124
-msgid "Blog Count/Category"
-msgstr ""
-
-#: inc/customizer.php:1135
-msgid "Number of Posts to show"
-msgstr ""
-
-#: inc/customizer.php:1154
-msgid "Contact Section"
-msgstr ""
-
-#: inc/customizer.php:1167
-msgid "Disable Contact Section "
-msgstr ""
-
-#: inc/customizer.php:1181
-msgid "Contact Title / SubTitle "
-msgstr ""
-
-#: inc/customizer.php:1185 template-parts/section-contact.php:13
-msgid "Contact Us"
-msgstr ""
-
-#: inc/customizer.php:1198 template-parts/section-contact.php:14
-msgid "We would love to hear from you"
-msgstr ""
-
-#: inc/customizer.php:1217
-msgid "Contact Section Background"
-msgstr ""
-
-#: inc/customizer.php:1229
-msgid "Recommended Image Size: 1800X800px"
-msgstr ""
-
-#: inc/customizer.php:1239
-msgid "Contact Details"
-msgstr ""
-
-#: inc/customizer.php:1250
-msgid "Contact Form ShortCode"
-msgstr ""
-
-#: inc/customizer.php:1251
-msgid ""
-"Add shortcode for Contact form or go to to widget page to add your own "
-"widget."
-msgstr ""
-
-#: inc/customizer.php:1255 template-parts/section-contact.php:42
-msgid "Contact us on the detail given below"
-msgstr ""
-
-#: inc/customizer.php:1263
-msgid "Contact Detail"
-msgstr ""
-
-#: inc/customizer.php:1267 template-parts/section-contact.php:43
-msgid "Address: 2400 South Avenue"
-msgstr ""
-
-#: inc/customizer.php:1275
+#: inc/customizer.php:1282
 msgid "Contact Address"
 msgstr ""
 
-#: inc/customizer.php:1279 template-parts/section-contact.php:44
-msgid "Phone: +928 336 2000"
+#: inc/customizer.php:1270
+msgid "Contact Detail"
 msgstr ""
 
-#: inc/customizer.php:1287
-msgid "Phone"
+#: inc/customizer.php:1246
+msgid "Contact Details"
 msgstr ""
 
-#: inc/customizer.php:1291 template-parts/section-contact.php:45
-msgid "Email: info@website.com"
+#: functions.php:120
+msgid "Contact Form"
 msgstr ""
 
-#: inc/customizer.php:1303 template-parts/section-contact.php:46
-msgid "Website: http://hashthemes.com"
+#: inc/customizer.php:1257
+msgid "Contact Form ShortCode"
 msgstr ""
 
-#: inc/customizer.php:1322
-msgid "Social Icons"
+#: inc/customizer.php:1161
+msgid "Contact Section"
 msgstr ""
 
-#: inc/customizer.php:1335
-msgid "Facebook"
+#: inc/customizer.php:1224
+msgid "Contact Section Background"
 msgstr ""
 
-#: inc/customizer.php:1348
-msgid "Twitter"
+#: inc/customizer.php:1188
+msgid "Contact Title / SubTitle "
 msgstr ""
 
-#: inc/customizer.php:1361
-msgid "Pinterest"
+#: inc/customizer.php:1192 template-parts/section-contact.php:13
+msgid "Contact Us"
 msgstr ""
 
-#: inc/customizer.php:1374
-msgid "Youtube"
+#: inc/customizer.php:1262 template-parts/section-contact.php:42
+msgid "Contact us on the detail given below"
 msgstr ""
 
-#: inc/customizer.php:1387
-msgid "Linkedin"
+#. %s: Name of current post
+#: template-parts/content.php:46
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: inc/customizer.php:1392 inc/customizer.php:1405
+#: inc/customizer.php:1399 inc/customizer.php:1412
 msgid "Copyright Text"
 msgstr ""
 
-#: inc/customizer.php:1541
-msgid "Add/Edit Gallery"
+#: inc/customizer.php:858
+msgid "Counter "
 msgstr ""
 
-#: inc/customizer.php:1542
-msgid "Clear"
+#: welcome/sections/free_vs_pro.php:162
+msgid "Counter - 4 styles"
 msgstr ""
 
-#: inc/hashone-metabox.php:16
-msgid "Sidebar Layout"
+#: inc/customizer.php:896
+msgid "Counter Icon"
 msgstr ""
 
-#: inc/breadcrumb.php:255
-msgid "Browse:"
+#: inc/customizer.php:771
+msgid "Counter Section"
 msgstr ""
 
-#: inc/breadcrumb.php:256
-msgctxt "breadcrumbs aria label"
-msgid "Breadcrumbs"
+#: inc/customizer.php:834
+msgid "Counter Section Background"
 msgstr ""
 
-#: inc/breadcrumb.php:257
-msgid "Home"
+#: inc/customizer.php:798
+msgid "Counter Title / SubTitle"
 msgstr ""
 
-#: inc/breadcrumb.php:258
-msgid "404 Not Found"
+#: inc/customizer.php:884
+msgid "Counter Value"
 msgstr ""
 
-#: inc/breadcrumb.php:259
-msgid "Archives"
+#: welcome/sections/getting_started.php:18
+msgid ""
+"Create a new page and edit with Elementor. Drag and drop the news elements "
+"in the Elementor to create your own design."
 msgstr ""
 
-#. %s is the search query.
-#: inc/breadcrumb.php:261
-#, php-format
-msgid "Search results for: %s"
+#: welcome/sections/support.php:13 welcome/sections/support.php:15
+msgid "Create Support Tickets"
 msgstr ""
 
-#. %s is the page number.
-#: inc/breadcrumb.php:263
-#, php-format
-msgid "Page %s"
+#: welcome/sections/free_vs_pro.php:210
+msgid ""
+"Create unlimited widget areas using our premium version. You can create new "
+"widget areas for placing widgets."
 msgstr ""
 
-#. %s is the page number.
-#: inc/breadcrumb.php:265
-#, php-format
-msgid "Comment Page %s"
-msgstr ""
-
-#. Minute archive title. %s is the minute time format.
-#: inc/breadcrumb.php:267
-#, php-format
-msgid "Minute %s"
-msgstr ""
-
-#. Weekly archive title. %s is the week date format.
-#: inc/breadcrumb.php:269
-#, php-format
-msgid "Week %s"
-msgstr ""
-
-#: inc/breadcrumb.php:727
-msgctxt "minute and hour archives time format"
-msgid "g:i a"
-msgstr ""
-
-#: inc/breadcrumb.php:744
-msgctxt "minute archives time format"
-msgid "i"
-msgstr ""
-
-#: inc/breadcrumb.php:761
-msgctxt "hour archives time format"
-msgid "g a"
-msgstr ""
-
-#: inc/breadcrumb.php:777 inc/breadcrumb.php:806 inc/breadcrumb.php:833
-#: inc/breadcrumb.php:860 inc/breadcrumb.php:1197
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr ""
-
-#: inc/breadcrumb.php:778 inc/breadcrumb.php:834 inc/breadcrumb.php:1201
-msgctxt "monthly archives date format"
-msgid "F"
+#: inc/customizer.php:862 template-parts/section-counter.php:28
+msgid "Cups of Coffee"
 msgstr ""
 
 #: inc/breadcrumb.php:779 inc/breadcrumb.php:1205
@@ -809,13 +693,78 @@ msgctxt "daily archives date format"
 msgid "j"
 msgstr ""
 
-#: inc/breadcrumb.php:807
-msgctxt "weekly archives date format"
-msgid "W"
+#: welcome/sections/getting_started.php:25
+msgid "Demo Importer"
 msgstr ""
 
-#: inc/hashone-functions.php:113
-msgid "Your comment is awaiting moderation."
+#: welcome/sections/free_vs_pro.php:43 welcome/sections/free_vs_pro.php:51
+#: welcome/sections/free_vs_pro.php:83 welcome/sections/free_vs_pro.php:91
+#: welcome/sections/free_vs_pro.php:99 welcome/sections/free_vs_pro.php:107
+#: welcome/sections/free_vs_pro.php:139 welcome/sections/free_vs_pro.php:147
+#: welcome/sections/free_vs_pro.php:177 welcome/sections/free_vs_pro.php:185
+#: welcome/sections/free_vs_pro.php:193 welcome/sections/free_vs_pro.php:201
+#: welcome/sections/free_vs_pro.php:209 welcome/sections/free_vs_pro.php:225
+#: welcome/sections/free_vs_pro.php:233 welcome/sections/free_vs_pro.php:241
+#: welcome/sections/free_vs_pro.php:263 welcome/sections/free_vs_pro.php:279
+#: welcome/sections/free_vs_pro.php:287 welcome/sections/free_vs_pro.php:295
+#: welcome/sections/free_vs_pro.php:303
+msgid "Detail"
+msgstr ""
+
+#: inc/customizer.php:240
+msgid "Disable About Section "
+msgstr ""
+
+#: inc/customizer.php:1080
+msgid "Disable Blog Section "
+msgstr ""
+
+#: inc/customizer.php:1174
+msgid "Disable Contact Section "
+msgstr ""
+
+#: inc/customizer.php:784
+msgid "Disable Counter Section "
+msgstr ""
+
+#: inc/customizer.php:355
+msgid "Disable Featured Section "
+msgstr ""
+
+#: inc/customizer.php:915
+msgid "Disable Logo Section "
+msgstr ""
+
+#: inc/customizer.php:454
+msgid "Disable Portfolio Section "
+msgstr ""
+
+#: inc/customizer.php:535
+msgid "Disable Service Section "
+msgstr ""
+
+#: inc/customizer.php:652
+msgid "Disable Team Section "
+msgstr ""
+
+#: inc/customizer.php:997
+msgid "Disable Testimonial Section "
+msgstr ""
+
+#: welcome/welcome.php:137
+msgid "Dismiss"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:377
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/customizer.php:66 welcome/sections/support.php:3
+msgid "Documentation"
+msgstr ""
+
+#: welcome/sections/getting_started.php:21
+msgid "Documentation Page"
 msgstr ""
 
 #: inc/hashone-functions.php:115 inc/template-tags.php:69
@@ -823,308 +772,175 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#. translators: 1: comment date, 2: comment time
-#: inc/hashone-functions.php:127
-#, php-format
-msgid "%1$s at %2$s"
-msgstr ""
-
-#: inc/template-tags.php:22
-#, php-format
-msgctxt "post author"
-msgid "by %s"
-msgstr ""
-
-#: inc/template-tags.php:29
-#, php-format
-msgid "No %s"
-msgstr ""
-
-#: inc/template-tags.php:29 inc/template-tags.php:31
-msgid "Comments"
-msgstr ""
-
-#: inc/template-tags.php:33
-#, php-format
-msgid "1 %s"
-msgstr ""
-
-#: inc/template-tags.php:53
-#, php-format
-msgid "Posted in %1$s"
-msgstr ""
-
-#: inc/template-tags.php:59
-#, php-format
-msgid "Tagged %1$s"
-msgstr ""
-
-#: inc/template-tags.php:65
-msgid "Leave a comment"
-msgstr ""
-
-#: inc/template-tags.php:65
-msgid "1 Comment"
-msgstr ""
-
-#: inc/template-tags.php:65
-msgid "% Comments"
-msgstr ""
-
-#: welcome/welcome.php:25
-msgid "Getting Started"
-msgstr ""
-
-#: welcome/welcome.php:26 welcome/sections/recommended_plugins.php:6
-msgid "Recommended Plugins"
-msgstr ""
-
-#: welcome/welcome.php:27
-msgid "Support"
-msgstr ""
-
-#: welcome/welcome.php:66
+#: welcome/sections/free_vs_pro.php:68
 msgid ""
-"Welcome! Thank you for choosing HashOne. Please make sure you visit Settings "
-"Page to get started with HashOne theme."
+"Elementor provides you with unlimited possibilities to create the website of "
+"your imagination."
 msgstr ""
 
-#: welcome/welcome.php:67
-msgid "Let's Get Started"
+#: comments.php:69 inc/customizer.php:1306
+msgid "Email"
 msgstr ""
 
-#: welcome/welcome.php:75
-msgid "Welcome"
+#: inc/customizer.php:1298 template-parts/section-contact.php:45
+msgid "Email: info@website.com"
 msgstr ""
 
-#: welcome/welcome.php:75
-msgid "HashOne Settings"
-msgstr ""
-
-#. 1-theme name, 2-theme version
-#: welcome/welcome.php:88
-#, php-format
-msgid "Welcome to %1$s - Version %2$s"
-msgstr ""
-
-#: welcome/welcome.php:90
-msgid ""
-"HashOne is a powerful multipurpose WordPress Theme that is packed with lots "
-"of features for creating a full packaged website that can be used by a "
-"business, restaurant, freelancers, photographers, bloggers, education firms, "
-"non-profit organization and creative agencies. The theme is fully responsive "
-"and mobile friendly and has lots of customization possibilities with various "
-"home page sections to showcase varieties of content. The theme can be used "
-"to set up a single page website with animated content that adds charm to the "
-"website with additional parallax effect. The theme is SEO friendly, "
-"Translation ready, Woo Commerce compatible and integrates seamlessly with "
-"almost all popular WordPress Plugins."
-msgstr ""
-
-#: welcome/welcome.php:124
-msgid "Installing Demo Importer Plugin"
-msgstr ""
-
-#: welcome/welcome.php:125
-msgid "Activating Demo Importer Plugin"
-msgstr ""
-
-#: welcome/welcome.php:126 welcome/sections/getting_started.php:47
-msgid "Go to Demo Importer Page"
-msgstr ""
-
-#: welcome/welcome.php:128
+#: welcome/welcome.php:192
 msgid "Error! Reload the page and try again."
 msgstr ""
 
-#: template-parts/content-single.php:15 template-parts/content-page.php:15
-#: template-parts/content.php:50
-msgid "Pages:"
+#: inc/customizer.php:160
+msgid "Excerpt"
 msgstr ""
 
-#: template-parts/content-none.php:11
-msgid "Nothing Found"
+#: inc/customizer.php:683 template-parts/section-team.php:18
+msgid "Experts who works for us"
 msgstr ""
 
-#: template-parts/content-none.php:17
-#, php-format
+#: inc/class-tgm-plugin-activation.php:2248
+msgid "External Source"
+msgstr ""
+
+#: inc/customizer.php:1342
+msgid "Facebook"
+msgstr ""
+
+#: inc/customizer.php:740
+msgid "Facebook Url"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:60
 msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+"Fan of Pagebuilder? No problem, with premium version you can create your "
+"website with Elementor. Elementor provides you with unlimited possibilities "
+"to create the website of your imagination."
 msgstr ""
 
-#: template-parts/content-none.php:21
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
+#: welcome/sections/free_vs_pro.php:158
+msgid "Featured block - 7 styles"
 msgstr ""
 
-#: template-parts/content-none.php:26
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
+#: inc/customizer.php:410
+msgid "Featured Page "
 msgstr ""
 
-#: template-parts/content.php:42
-msgid "Read More"
+#: inc/customizer.php:342
+msgid "Featured Section"
 msgstr ""
 
-#. translators: %s: Name of current post
-#: template-parts/content.php:46
-#, php-format
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+#: inc/customizer.php:369
+msgid "Featured Title / SubTitle "
 msgstr ""
 
-#: template-parts/section-blog.php:51
-msgid "Portfolio Thumb"
-msgstr ""
-
-#: template-parts/section-logo.php:33
-msgid "Logo"
-msgstr ""
-
-#. Name of the template
-msgid "Home Page"
-msgstr ""
-
-#. Theme Name
-#: welcome/sections/support.php:7
-#, php-format
-msgid ""
-"Read the detailed documentation of the theme. The documentation contain all "
-"the necessary information required to setup the theme %s."
-msgstr ""
-
-#: welcome/sections/support.php:9
-msgid "Read Full Documentation"
-msgstr ""
-
-#: welcome/sections/support.php:13 welcome/sections/support.php:15
-msgid "Create Support Tickets"
-msgstr ""
-
-#: welcome/sections/support.php:14
-msgid ""
-"Still having problem after reading all the documentation? No Problem!! "
-"Please create a support ticket. Our dedicated support team will help you to "
-"solve your problem"
-msgstr ""
-
-#: welcome/sections/recommended_plugins.php:7
-msgid ""
-"Please Install all the plugins. Although these plugins are complementary, we "
-"encourage to install theme to use the theme to full extent"
-msgstr ""
-
-#: welcome/sections/recommended_plugins.php:27
-msgid "Activate"
-msgstr ""
-
-#: welcome/sections/recommended_plugins.php:30
-msgid "Installed"
-msgstr ""
-
-#: welcome/sections/recommended_plugins.php:34
-msgid "Install Now"
-msgstr ""
-
-#: welcome/sections/getting_started.php:4
-msgid "Step 1 - Create a new page with \"Home Page\" Template"
-msgstr ""
-
-#: welcome/sections/getting_started.php:6
-msgid "Create a new page (any title like Home )"
-msgstr ""
-
-#: welcome/sections/getting_started.php:7
-msgid ""
-"In right column, select \"Home Page\" for the option Page Attributes > "
-"Template"
-msgstr ""
-
-#: welcome/sections/getting_started.php:8
-msgid "Click on Publish"
-msgstr ""
-
-#: welcome/sections/getting_started.php:10
-msgid "Create New Page"
-msgstr ""
-
-#: welcome/sections/getting_started.php:14
-msgid "Step 2 - Set \"Your homepage displays\" to \"A Static Page\""
-msgstr ""
-
-#: welcome/sections/getting_started.php:16
-msgid "Go to Appearance > Customize > General settings > Static Front Page"
+#: welcome/sections/free_vs_pro.php:29
+msgid "Features"
 msgstr ""
 
 #: welcome/sections/getting_started.php:17
-msgid "Set \"Your homepage displays\" to \"A Static Page\""
-msgstr ""
-
-#: welcome/sections/getting_started.php:18
-msgid "In \"Homepage\", select the page that you created in the step 1"
-msgstr ""
-
-#: welcome/sections/getting_started.php:19
-msgid "Save changes"
-msgstr ""
-
-#: welcome/sections/getting_started.php:21
-msgid "Assign Static Page"
-msgstr ""
-
-#: welcome/sections/getting_started.php:25
-msgid "Step 3 - Customizer Options Panel"
-msgstr ""
-
-#: welcome/sections/getting_started.php:26
-msgid ""
-"Now go to Customizer Page. Using the WordPress Customizer you can easily set "
-"up the home page and customize the theme."
-msgstr ""
-
-#: welcome/sections/getting_started.php:27
-msgid "Go to Customizer Panels"
-msgstr ""
-
-#: welcome/sections/getting_started.php:33
-msgid "Demo Importer"
-msgstr ""
-
-#: welcome/sections/getting_started.php:33
-msgid "View Demo"
-msgstr ""
-
-#: welcome/sections/getting_started.php:34
-msgid "HashOne Demo"
-msgstr ""
-
-#: welcome/sections/getting_started.php:44
-msgid "Activate Demo Importer Plugin"
-msgstr ""
-
-#: welcome/sections/getting_started.php:51
-msgid "Install Demo Importer Plugin"
-msgstr ""
-
-#: welcome/sections/getting_started.php:54
-msgid "Or you can get started by importing the demo with just one click."
-msgstr ""
-
-#: welcome/sections/getting_started.php:55
 #, php-format
 msgid ""
-"Click on the button below to install and activate HashThemes Demo Importer "
-"plugin. For more detail documentation on how the demo importer works, click "
+"Firstly install and activate \"Elementor\" and \"Hash Elements\" plugin from "
 "%s."
 msgstr ""
 
-#: welcome/sections/getting_started.php:55
-msgid "here"
+#: welcome/sections/free_vs_pro.php:375
+msgid ""
+"Follows best SEO practices so that your website always ranks higher in "
+"Search Engines."
+msgstr ""
+
+#: inc/customizer.php:434 inc/customizer.php:633
+msgid "FontAwesome Icon"
+msgstr ""
+
+#: functions.php:170
+msgid "Footer Four"
+msgstr ""
+
+#: functions.php:140
+msgid "Footer One"
+msgstr ""
+
+#: functions.php:160
+msgid "Footer Three"
+msgstr ""
+
+#: functions.php:150
+msgid "Footer Two"
+msgstr ""
+
+#: welcome/sections/getting_started.php:21
+#, php-format
+msgid "For detailed documentation, please visit %s."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:399
+msgid "For the Premium theme, the user will get a reply in 10 hours or less."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:30
+msgid "Free"
+msgstr ""
+
+#: welcome/sections/header.php:18
+msgid "Free Demos"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:13
+msgid "FREE UPDATES FOR LIFETIME"
+msgstr ""
+
+#: welcome/welcome.php:27
+msgid "Free Vs Pro"
+msgstr ""
+
+#: welcome/sections/getting_started.php:9
+msgid "FROM CUSTOMIZER"
+msgstr ""
+
+#: welcome/sections/getting_started.php:15
+msgid "FROM ELEMENTOR"
+msgstr ""
+
+#: inc/customizer.php:161
+msgid "Full Content"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:361
+msgid "Fully"
+msgstr ""
+
+#: inc/customizer.php:81
+msgid "General Settings"
+msgstr ""
+
+#: welcome/welcome.php:131
+msgid "Get Started"
+msgstr ""
+
+#: welcome/welcome.php:24
+msgid "Getting Started"
+msgstr ""
+
+#: welcome/sections/getting_started.php:11
+msgid "Go to Appearance > Customize"
+msgstr ""
+
+#: welcome/welcome.php:190 welcome/welcome.php:289
+msgid "Go to Demo Importer Page"
+msgstr ""
+
+#: welcome/welcome.php:133
+msgid "Go to Setting Page"
 msgstr ""
 
 #. Name of the theme
 msgid "HashOne"
+msgstr ""
+
+#: welcome/welcome.php:115
+msgid "Hashone Demo"
 msgstr ""
 
 #. Description of the theme
@@ -1142,14 +958,1369 @@ msgid ""
 "com/hashone"
 msgstr ""
 
-#. URI of the theme
-msgid "https://hashthemes.com/wordpress-theme/hashone/"
-msgstr ""
-
 #. Author of the theme
 msgid "HashThemes"
 msgstr ""
 
+#: inc/customizer.php:106
+msgid "Header Background"
+msgstr ""
+
+#: inc/customizer.php:120
+msgid "Header Background Color"
+msgstr ""
+
+#: inc/customizer.php:100
+msgid "Header Logo"
+msgstr ""
+
+#: welcome/sections/getting_started.php:32
+msgid "here"
+msgstr ""
+
+#: welcome/welcome.php:132
+#, php-format
+msgid ""
+"Here you will find all the necessary links and information on how to use %s."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3447
+#: inc/class-tgm-plugin-activation.php:3455
+msgid "Hide Details"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:159
+msgid "Highlight Block - 4 styles"
+msgstr ""
+
+#: inc/breadcrumb.php:257
+msgid "Home"
+msgstr ""
+
+#. Name of the template
+#: templates/home-template.php:3
+msgid "Home Page"
+msgstr ""
+
+#: inc/customizer.php:179
+msgid "Home Page Sections"
+msgstr ""
+
+#: welcome/sections/getting_started.php:12
+msgid "Homepage Settings"
+msgstr ""
+
+#: inc/breadcrumb.php:761
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
 #. Author URI of the theme
 msgid "https://hashthemes.com"
+msgstr ""
+
+#. URI of the theme
+msgid "https://hashthemes.com/wordpress-theme/hashone/"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:330
+msgid "i) Ico Font"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:331
+msgid "ii) FontAwesome"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:332
+msgid "iii) Essential Icon"
+msgstr ""
+
+#: inc/customizer.php:846
+msgid "Image Size: 1800X400px"
+msgstr ""
+
+#: inc/customizer.php:598
+msgid "Image Size: 770X650px"
+msgstr ""
+
+#: inc/customizer.php:75
+msgid "Import"
+msgstr ""
+
+#: welcome/welcome.php:122
+msgid "Import Demo"
+msgstr ""
+
+#: inc/customizer.php:73
+msgid "Import Demo Content"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:84
+msgid ""
+"Import Elementor Templates and Sections with just one click without having "
+"to import the whole website."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2649
+msgid "Install"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: inc/class-tgm-plugin-activation.php:2539
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: welcome/welcome.php:293
+msgid "Install Demo Importer Plugin"
+msgstr ""
+
+#: welcome/sections/recommended_plugins.php:35
+msgid "Install Now"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#. 1: install status, 2: update status
+#: inc/class-tgm-plugin-activation.php:2293
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: welcome/sections/recommended_plugins.php:31
+msgid "Installed"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2272
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2431
+msgid "Installed version:"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: inc/class-tgm-plugin-activation.php:3450
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: welcome/welcome.php:188
+msgid "Installing Demo Importer Plugin"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: inc/class-tgm-plugin-activation.php:3458
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. %s: plugin name.
+#: inc/class-tgm-plugin-activation.php:330
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: template-parts/content-none.php:26
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:333
+msgid "iv) Material Icon"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:14
+msgid "Keep up to date"
+msgstr ""
+
+#: inc/customizer.php:1098 template-parts/section-blog.php:11
+msgid "Latest blogs"
+msgstr ""
+
+#: inc/template-tags.php:65
+msgid "Leave a comment"
+msgstr ""
+
+#: functions.php:110
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/customizer.php:566 template-parts/section-service.php:20
+msgid "Let us do all things for you"
+msgstr ""
+
+#: inc/customizer.php:1394
+msgid "Linkedin"
+msgstr ""
+
+#: inc/customizer.php:764
+msgid "Linkedin Url"
+msgstr ""
+
+#: template-parts/section-logo.php:33
+msgid "Logo"
+msgstr ""
+
+#: welcome/sections/getting_started.php:3
+msgid "Manual Setup"
+msgstr ""
+
+#: inc/customizer.php:946 template-parts/section-logo.php:12
+msgid "Meet our Awesome Clients"
+msgstr ""
+
+#: inc/customizer.php:670 template-parts/section-team.php:17
+msgid "Meet Our Team"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2437
+msgid "Minimum required version:"
+msgstr ""
+
+#. Minute archive title. %s is the minute time format.
+#: inc/breadcrumb.php:267
+#, php-format
+msgid "Minute %s"
+msgstr ""
+
+#: inc/breadcrumb.php:727
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: inc/breadcrumb.php:744
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: inc/breadcrumb.php:778 inc/breadcrumb.php:834 inc/breadcrumb.php:1201
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: comments.php:66
+msgid "Name"
+msgstr ""
+
+#: comments.php:35
+msgid "Newer Comments"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:166
+msgid "News &amp; Update block - 3 styles"
+msgstr ""
+
+#: archive.php:43 search.php:39
+msgid "Next"
+msgstr ""
+
+#: inc/customizer.php:243 inc/customizer.php:358 inc/customizer.php:457
+#: inc/customizer.php:538 inc/customizer.php:655 inc/customizer.php:787
+#: inc/customizer.php:918 inc/customizer.php:1000 inc/customizer.php:1083
+#: inc/customizer.php:1177
+msgid "No"
+msgstr ""
+
+#: inc/template-tags.php:29
+#, php-format
+msgid "No %s"
+msgstr ""
+
+#. 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:372
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2864
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2732
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2734
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2469
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2838
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2689
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2691
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:4
+msgid "No renewal needed"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2268
+msgid "Not Installed"
+msgstr ""
+
+#: inc/customizer.php:220
+msgid "Note:"
+msgstr ""
+
+#: template-parts/content-none.php:11
+msgid "Nothing Found"
+msgstr ""
+
+#: welcome/sections/getting_started.php:13
+msgid ""
+"Now go back and click on \"Front Page Sections\" and set up the FrontPage "
+"Section"
+msgstr ""
+
+#: welcome/sections/getting_started.php:19
+msgid ""
+"Now go to Appearance > Customize > Homepage Settings and choose \"A static "
+"page\" for \"Your latest posts\" and select the created page for \"Home "
+"Page\" option."
+msgstr ""
+
+#: inc/customizer.php:1142
+msgid "Number of Posts to show"
+msgstr ""
+
+#: comments.php:34
+msgid "Older Comments"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:3
+msgid "ONE TIME PAYMENT"
+msgstr ""
+
+#: inc/customizer.php:122
+msgid "Only appears in sticky header in featured frontpage."
+msgstr ""
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#. If there are characters in your language that are not supported
+#. by Open Sans, translate this to 'off'. Do not translate into your own language.
+#: functions.php:200
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:124
+msgid "Option to organize how the front page section appears."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:156
+msgid "Option to switch the style of the front page blocks."
+msgstr ""
+
+#: welcome/sections/getting_started.php:31
+msgid "Or you can get started by importing the demo with just one click."
+msgstr ""
+
+#: inc/customizer.php:802 template-parts/section-counter.php:13
+msgid "OUR FACTS"
+msgstr ""
+
+#: inc/customizer.php:373 template-parts/section-feature.php:17
+msgid "Our Features"
+msgstr ""
+
+#. %s is the page number.
+#: inc/breadcrumb.php:263
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/customizer.php:127 inc/customizer.php:137
+msgid "Page Header Banner"
+msgstr ""
+
+#: template-parts/content-single.php:15 template-parts/content-page.php:15
+#: template-parts/content.php:50
+msgid "Pages:"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:360
+msgid "Partially"
+msgstr ""
+
+#: inc/customizer.php:335
+msgid "Percentage"
+msgstr ""
+
+#: inc/customizer.php:1294
+msgid "Phone"
+msgstr ""
+
+#: inc/customizer.php:1286 template-parts/section-contact.php:44
+msgid "Phone: +928 336 2000"
+msgstr ""
+
+#: inc/customizer.php:1368
+msgid "Pinterest"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:379
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:901
+#: inc/class-tgm-plugin-activation.php:904
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: welcome/sections/recommended_plugins.php:7
+msgid ""
+"Please install these free plugins. These plugins are complementary that adds "
+"more features to the theme."
+msgstr ""
+
+#: welcome/welcome.php:273
+#, php-format
+msgid ""
+"Please leave us a %s rating if you like our theme . A huge thank you from "
+"HashThemes in advance!"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2483
+msgid "Plugin"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1086
+#: inc/class-tgm-plugin-activation.php:2878
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:369
+#: inc/class-tgm-plugin-activation.php:3094
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3093
+msgid "Plugin activation failed."
+msgstr ""
+
+#. 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:374
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2337
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: welcome/sections/free_vs_pro.php:161
+msgid "Portfolio - 6 styles"
+msgstr ""
+
+#: inc/customizer.php:505
+msgid "Portfolio Category"
+msgstr ""
+
+#: inc/customizer.php:441
+msgid "Portfolio Section"
+msgstr ""
+
+#: template-parts/section-blog.php:51
+msgid "Portfolio Thumb"
+msgstr ""
+
+#: inc/customizer.php:468
+msgid "Portfolio Title/SubTitle"
+msgstr ""
+
+#: inc/template-tags.php:22
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:53
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2251
+msgid "Pre-Packaged"
+msgstr ""
+
+#: welcome/sections/header.php:19
+msgid "Premium Demos"
+msgstr ""
+
+#: archive.php:42 search.php:38
+msgid "Prev"
+msgstr ""
+
+#: welcome/sections/footer.php:16 welcome/sections/footer.php:29
+#: welcome/sections/footer.php:42 welcome/sections/footer.php:55
+#: welcome/sections/footer.php:68 welcome/sections/footer.php:81
+msgid "Preview"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:165
+msgid "Pricing - 4 styles"
+msgstr ""
+
+#: functions.php:33
+msgid "Primary Menu"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:31
+msgid "Pro"
+msgstr ""
+
+#: inc/customizer.php:300
+msgid "Progress Bar "
+msgstr ""
+
+#: inc/customizer.php:304 template-parts/section-about.php:41
+msgid "Progress Bar Title"
+msgstr ""
+
+#: inc/customizer.php:276
+msgid "Progress Bars"
+msgstr ""
+
+#: welcome/sections/support.php:9
+msgid "Read Full Documentation"
+msgstr ""
+
+#: template-parts/content.php:42
+msgid "Read More"
+msgstr ""
+
+#. Theme Name
+#: welcome/sections/support.php:7
+#, php-format
+msgid ""
+"Read the detailed documentation of the theme. The documentation contains all "
+"the necessary information required to set up the %s theme."
+msgstr ""
+
+#: template-parts/content-none.php:17
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2229
+msgid "Recommended"
+msgstr ""
+
+#: inc/customizer.php:140
+msgid "Recommended Image Size: 1800X400px"
+msgstr ""
+
+#: inc/customizer.php:1236
+msgid "Recommended Image Size: 1800X800px"
+msgstr ""
+
+#: inc/customizer.php:221
+msgid "Recommended Image Size: 1900X600"
+msgstr ""
+
+#: welcome/sections/getting_started.php:17
+msgid "Recommended Plugin page"
+msgstr ""
+
+#: welcome/welcome.php:25 welcome/sections/recommended_plugins.php:6
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/customizer.php:288
+msgid "Replace Progress Bar by widget"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2226
+msgid "Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2280
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2282
+msgid "Requires Update"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:367
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:368
+#: inc/class-tgm-plugin-activation.php:794
+#: inc/class-tgm-plugin-activation.php:2469
+#: inc/class-tgm-plugin-activation.php:3517
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: functions.php:100
+msgid "Right Sidebar"
+msgstr ""
+
+#. If there are characters in your language that are not supported
+#. by Inconsolata, translate this to 'off'. Do not translate into your own language.
+#: functions.php:208
+msgctxt "Roboto Condensed font: on or off"
+msgid "on"
+msgstr ""
+
+#: search.php:12
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#. %s is the search query.
+#: inc/breadcrumb.php:261
+#, php-format
+msgid "Search results for: %s"
+msgstr ""
+
+#: inc/customizer.php:209 inc/customizer.php:266 inc/customizer.php:422
+#: inc/customizer.php:621 inc/customizer.php:716
+msgid "Select a Page"
+msgstr ""
+
+#: inc/customizer.php:1061
+msgid "Select Some Pages"
+msgstr ""
+
+#: inc/customizer.php:1060
+msgid "Select the Pages"
+msgstr ""
+
+#: inc/customizer.php:549
+msgid "Serivce Title / SubTitle"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:160
+msgid "Service Block - 4 styles"
+msgstr ""
+
+#: inc/customizer.php:586
+msgid "Service Left Banner Image"
+msgstr ""
+
+#: inc/customizer.php:609
+msgid "Service Page "
+msgstr ""
+
+#: inc/customizer.php:522
+msgid "Service Section"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3447
+#: inc/class-tgm-plugin-activation.php:3455
+msgid "Show Details"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:320
+msgid "Shows the physical location with an interactive contact form."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:272
+msgid ""
+"Shows the short intro of the post author along with social icons, major "
+"Social Share Icons without using a plugin, and related posts by category."
+msgstr ""
+
+#: inc/hashone-metabox.php:16
+msgid "Sidebar Layout"
+msgstr ""
+
+#: inc/customizer.php:94
+msgid "Site Title & Tagline"
+msgstr ""
+
+#: inc/customizer.php:198
+msgid "Slider "
+msgstr ""
+
+#: inc/customizer.php:184
+msgid "Slider Section"
+msgstr ""
+
+#: inc/customizer.php:1329
+msgid "Social Icons"
+msgstr ""
+
+#: inc/customizer.php:815 template-parts/section-counter.php:14
+msgid "Some Numbers that Speaks"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: template-parts/content-none.php:21
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2484
+msgid "Source"
+msgstr ""
+
+#: inc/customizer.php:87
+msgid "Static Front Page"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2490
+msgid "Status"
+msgstr ""
+
+#: welcome/sections/support.php:14
+msgid ""
+"Still, having problems after reading all the documentation? No Problem!! "
+"Please create a support ticket. Our dedicated support team will help you to "
+"solve your problem."
+msgstr ""
+
+#: inc/customizer.php:395 inc/customizer.php:494 inc/customizer.php:575
+#: inc/customizer.php:692 inc/customizer.php:824 inc/customizer.php:955
+#: inc/customizer.php:1037 inc/customizer.php:1120 inc/customizer.php:1214
+msgid "Sub Title"
+msgstr ""
+
+#: welcome/welcome.php:26
+msgid "Support"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:167
+msgid "Tabs - 5 styles"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:59
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/customizer.php:704
+msgid "Team "
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:163
+msgid "Team - 6 styles"
+msgstr ""
+
+#: inc/customizer.php:728
+msgid "Team Member Designation"
+msgstr ""
+
+#: inc/customizer.php:639
+msgid "Team Section"
+msgstr ""
+
+#: inc/customizer.php:666
+msgid "Team Title / SubTitle "
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:164
+msgid "Testimonial - 4 styles"
+msgstr ""
+
+#: inc/customizer.php:1048
+msgid "Testimonial Pages"
+msgstr ""
+
+#: inc/customizer.php:984
+msgid "Testimonial Section"
+msgstr ""
+
+#: inc/customizer.php:1011
+msgid "Testimonial Title / SubTitle "
+msgstr ""
+
+#: inc/customizer.php:1015 template-parts/section-testimonial.php:17
+msgid "Testimonials"
+msgstr ""
+
+#. %s: version number
+#: inc/class-tgm-plugin-activation.php:1930
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:342
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:370
+#: inc/class-tgm-plugin-activation.php:2881
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:354
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:350
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: welcome/sections/free_vs_pro.php:116
+msgid ""
+"The free version has a basic color option but the premium version has "
+"advanced color options that allow customizing the color everywhere like "
+"header, post/page, footer, and front page sections."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3445
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:3441
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3453
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:226
+msgid ""
+"The loading screen appears until the website is fully loaded. The premium "
+"version has the option to choose from 16 preloaders or add your preloader "
+"image as well."
+msgstr ""
+
+#: inc/customizer.php:221
+msgid ""
+"The Page featured image works as a slider banner and the title & content "
+"work as a slider caption."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:328
+msgid ""
+"The premium theme has 4 icon packs with more than 5000+ icons. They can be "
+"used on the various sections of the Front Page, WordPress Widget Blocks, and "
+"Elementor Modules."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:132
+msgid ""
+"The premium version allows adding an unlimited block for all the sections on "
+"the front page. This includes a slider, featured block, highlight block, "
+"service, team, testimonial, counter, pricing, tabs, news and update block, "
+"and logo. Moreover, it has the option to choose the number of columns to "
+"show in each row."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:288
+msgid ""
+"The premium version comes with the option to configure the background and "
+"text color of each page and post on the website. It will allow you to choose "
+"the custom background color, background image, and text color for any page "
+"or post you like."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:312
+msgid ""
+"The premium version easily allows you to remove or change the footer credit "
+"text or replace it with the widget."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:250
+msgid ""
+"The premium version gives the option to choose from 4 differently designed "
+"blog layouts."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:92
+msgid ""
+"The premium version gives the option to choose from 6 header layouts. "
+"Additionally, it allows changing the header background color, text color, "
+"header height, and more."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:108
+msgid ""
+"The premium version has 800+ Google Fonts to choose from. Don't want to use "
+"Google Fonts? No problem, it has web safe standard non-Google fonts to "
+"choose from as well."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:140
+msgid ""
+"The premium version has advanced background options that include an option "
+"to choose from a video background, moving background, or gradient background."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:242
+msgid ""
+"The Premium version has an advanced blog page setting option. The option "
+"allows you to show or hide each element of the blog."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:100
+msgid ""
+"The Premium version has an inbuilt mega menu that will allow you to create "
+"beautiful big menus in no time."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:52
+msgid ""
+"The premium version has an inbuilt option to add the Maintenance(under "
+"construction) Screen with countdown time. You don't need to install "
+"additional plugins."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:194
+msgid ""
+"The premium version has an option for the Simple Slider, Revolution Slider, "
+"and Single Banner Image with advanced customization options."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:342
+msgid ""
+"The premium version has enhanced WooCommerce options like adding a cart icon "
+"in the menu, product page settings, sidebar layout settings, and more."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:280
+msgid ""
+"The premium version has the option to add a unique Title Bar(Header) "
+"background for each post and page."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:234
+#, php-format
+msgid ""
+"The premium version has the option to change the sidebar layout universally "
+"or %1schange the sidebar for individual posts/pages%2s. Moreover, it allows "
+"choosing the sidebar widgets for individual posts/pages."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:304
+msgid ""
+"The premium version has the option to choose from 5 different footer styles. "
+"Apart from that, you can set the number of footer columns and resize them as "
+"you want with dragging column resizer."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:350
+msgid ""
+"The Premium Version is fully compatible with RTL (Right to left) languages "
+"like Arabic"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:358
+msgid ""
+"The Premium Version is fully compatible with WPML and Poylang. Create the "
+"website in multiple languages."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:44
+msgid ""
+"The Premium version is fully GDPR compliance. Means no data is collected if "
+"you use the theme alone. Also the premium version has option to add GDPR "
+"Compliance & Cookies Consent text with buttons."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:904
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:901
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:178
+msgid ""
+"The theme has 16 shape dividers that you can choose from to create a nice "
+"transition effect between sections"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:383
+msgid "The website runs smoothly in all major browsers."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:378
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:346
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:496
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:338
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:334
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/customizer.php:324 inc/customizer.php:382 inc/customizer.php:481
+#: inc/customizer.php:562 inc/customizer.php:679 inc/customizer.php:811
+#: inc/customizer.php:871 inc/customizer.php:942 inc/customizer.php:1024
+#: inc/customizer.php:1107 inc/customizer.php:1201
+msgid "Title"
+msgstr ""
+
+#. 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2349
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2341
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: welcome/sections/free_vs_pro.php:202
+msgid ""
+"Total Plus comes with an option for the top bar where you can add a contact "
+"address, social icon, language picker, or any informative text."
+msgstr ""
+
+#: welcome/sections/footer.php:10 welcome/sections/footer.php:23
+#: welcome/sections/footer.php:36 welcome/sections/footer.php:49
+#: welcome/sections/footer.php:62 welcome/sections/footer.php:75
+msgid "Total Plus Demo"
+msgstr ""
+
+#: welcome/sections/footer.php:3
+#, php-format
+msgid "Total Plus Demos - Premium Version of %s"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:148
+msgid "Total Plus has an additional 7 sections."
+msgstr ""
+
+#: welcome/sections/footer.php:93
+msgid ""
+"Try the Premium version and check if it fits your need or not. If not, we "
+"have 7 days money-back guarantee."
+msgstr ""
+
+#: inc/customizer.php:1355
+msgid "Twitter"
+msgstr ""
+
+#: inc/customizer.php:752
+msgid "Twitter Url"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2485
+msgid "Type"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:8
+msgid "UNLIMITED DOMAIN LICENCE"
+msgstr ""
+
+#: welcome/sections/header.php:24
+msgid "Unlock all the possibilities with Total Plus."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2655
+msgid "Update"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: inc/class-tgm-plugin-activation.php:2544
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2345
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2284
+msgid "Update recommended"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:496
+msgid "Update Required"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: inc/class-tgm-plugin-activation.php:3436
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. %s: plugin name.
+#: inc/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: welcome/sections/header.php:25
+msgid "Upgrade for $65"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2616
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: welcome/sections/footer.php:96
+msgid "Upgrade Now"
+msgstr ""
+
+#: welcome/sections/footer.php:91
+msgid "Upgrade To Premium Version (7 Days Money Back Guarantee)"
+msgstr ""
+
+#: inc/customizer.php:61 welcome/sections/free_vs_pro.php:21
+#: welcome/sections/free_vs_pro.php:406
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:22 welcome/sections/free_vs_pro.php:407
+msgid "Upgrade to the pro version for additional features and better support."
+msgstr ""
+
+#: inc/customizer.php:978
+msgid "Upload Clients Logos"
+msgstr ""
+
+#: inc/customizer.php:967
+msgid "Upload Clients Logos "
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:9
+msgid "Use in as many websites as you need"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2489
+msgid "Version"
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "View"
+msgstr ""
+
+#: welcome/sections/getting_started.php:25 welcome/sections/free_vs_pro.php:67
+#: welcome/sections/free_vs_pro.php:75 welcome/sections/free_vs_pro.php:217
+msgid "View Demo"
+msgstr ""
+
+#: welcome/sections/getting_started.php:6
+msgid "Viral Demo"
+msgstr ""
+
+#: inc/customizer.php:933 template-parts/section-logo.php:11
+msgid "We are Associated with"
+msgstr ""
+
+#: inc/customizer.php:1205 template-parts/section-contact.php:14
+msgid "We would love to hear from you"
+msgstr ""
+
+#: comments.php:72 inc/customizer.php:1318
+msgid "Website"
+msgstr ""
+
+#: inc/customizer.php:1310 template-parts/section-contact.php:46
+msgid "Website: http://hashthemes.com"
+msgstr ""
+
+#. Weekly archive title. %s is the week date format.
+#: inc/breadcrumb.php:269
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: inc/breadcrumb.php:807
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: welcome/welcome.php:157
+msgid "Welcome"
+msgstr ""
+
+#. 1-theme name
+#: welcome/sections/header.php:13
+#, php-format
+msgid ""
+"Welcome and thank you for installing %1$s. Getting started with %1$s is very "
+"easy. Here you will find all the necessary information required to get "
+"started with the theme. And of course, the premium version if you require "
+"more features."
+msgstr ""
+
+#. 1-theme name, 2-theme version
+#: welcome/sections/header.php:7
+#, php-format
+msgid "Welcome to %1$s - Version %2$s"
+msgstr ""
+
+#: inc/customizer.php:1028 template-parts/section-testimonial.php:18
+msgid "What our client says"
+msgstr ""
+
+#: inc/customizer.php:472 template-parts/section-portfolio.php:10
+msgid "What we do it love"
+msgstr ""
+
+#: inc/customizer.php:53
+msgid "White"
+msgstr ""
+
+#: inc/customizer.php:553 template-parts/section-service.php:19
+msgid "Why Choose Us"
+msgstr ""
+
+#: welcome/sections/footer.php:92
+#, php-format
+msgid ""
+"With %s Theme you can create a beautiful website. But if you want to unlock "
+"more possibilities then upgrade to the premium version."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:218
+msgid ""
+"With a custom widget and Site origin page builder, you can play to create "
+"various website layouts."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:36
+msgid ""
+"With one click demo-import, you can install the demo content with just one "
+"click."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2245
+msgid "WordPress Repository"
+msgstr ""
+
+#: footer.php:64
+msgid "WordPress Theme"
+msgstr ""
+
+#: inc/breadcrumb.php:777 inc/breadcrumb.php:806 inc/breadcrumb.php:833
+#: inc/breadcrumb.php:860 inc/breadcrumb.php:1197
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/customizer.php:242 inc/customizer.php:357 inc/customizer.php:456
+#: inc/customizer.php:537 inc/customizer.php:654 inc/customizer.php:786
+#: inc/customizer.php:917 inc/customizer.php:999 inc/customizer.php:1082
+#: inc/customizer.php:1176
+msgid "Yes"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:76
+msgid ""
+"You can extend the Elementor section with amazing interactive extenders like "
+"Parallax Background, Parallax Animation, Colors Animation, Water Ripples, "
+"Particles Background, Background Effects & lot more."
+msgstr ""
+
+#: welcome/sections/getting_started.php:8
+msgid ""
+"You can setup the home page sections either from Customizer Panel or from "
+"Elementor Pagebuilder"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:296
+msgid ""
+"You can show/hide the header and footer for each of the pages/posts. It is "
+"helpful if you are running an infographic website."
+msgstr ""
+
+#: inc/hashone-functions.php:113
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/customizer.php:89
+msgid "Your theme supports a static front page."
+msgstr ""
+
+#: inc/customizer.php:1381
+msgid "Youtube"
+msgstr ""
+
+#: footer.php:56 inc/customizer.php:1403
+#, php-format
+msgid "© Copyright 2020 %s"
 msgstr ""

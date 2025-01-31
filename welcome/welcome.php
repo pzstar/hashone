@@ -39,7 +39,13 @@ if (!class_exists('Hashone_Welcome')) :
                     'name' => 'Elementor Page Builder',
                     'slug' => 'elementor',
                     'filename' => 'elementor',
-                    'thumb_path' => 'https://ps.w.org/elementor/assets/icon-256x256.png'
+                    'thumb_path' => 'https://ps.w.org/elementor/assets/icon-256x256.gif'
+                ),
+                'hash-form' => array(
+                    'name' => 'Hash Form - Drag & Drop Form Builder',
+                    'slug' => 'hash-form',
+                    'filename' => 'hash-form',
+                    'thumb_path' => 'https://ps.w.org/hash-form/assets/icon-256x256.gif'
                 ),
                 'hash-elements' => array(
                     'name' => 'Hash Elements',
@@ -52,7 +58,13 @@ if (!class_exists('Hashone_Welcome')) :
                     'slug' => 'simple-floating-menu',
                     'filename' => 'simple-floating-menu',
                     'thumb_path' => 'https://ps.w.org/simple-floating-menu/assets/icon-256x256.png'
-                )
+                ),
+                'mini-ajax-woo-cart' => array(
+                    'name' => 'Ajax Cart for WooCommerce',
+                    'slug' => 'mini-ajax-woo-cart',
+                    'filename' => 'mini-ajax-woo-cart',
+                    'thumb_path' => 'https://ps.w.org/mini-ajax-woo-cart/assets/icon-256x256.gif'
+                ),
             );
 
             /* Create a Welcome Page */

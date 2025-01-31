@@ -7,11 +7,24 @@
     <div class="recomended-plugin-wrap">
         <div class="recommended-plugins">
             <div class="plugin-image">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/total.jpg'); ?>" alt="<?php echo esc_attr__('Hashone Plus Demo', 'hashone'); ?>">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/wave.jpg'); ?>" alt="<?php echo esc_attr__('Total Plus Demo', 'hashone'); ?>">
             </div>
 
             <div class="plugin-title-wrap">
-                <div class="plugin-title">Hashone</div>
+                <div class="plugin-title">Wave</div>
+                <div class="plugin-btn-wrapper">
+                    <a target="_blank" href="https://demo.hashthemes.com/total-plus/wave/" class="button button-primary"><?php echo esc_html__('Preview', 'hashone'); ?></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="recommended-plugins">
+            <div class="plugin-image">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/total.jpg'); ?>" alt="<?php echo esc_attr__('Total Plus Demo', 'hashone'); ?>">
+            </div>
+
+            <div class="plugin-title-wrap">
+                <div class="plugin-title">Total</div>
                 <div class="plugin-btn-wrapper">
                     <a target="_blank" href="https://demo.hashthemes.com/total-plus/total/" class="button button-primary"><?php echo esc_html__('Preview', 'hashone'); ?></a>
                 </div>
@@ -20,7 +33,7 @@
 
         <div class="recommended-plugins">
             <div class="plugin-image">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/construction.jpg'); ?>" alt="<?php echo esc_attr__('Hashone Plus Demo', 'hashone'); ?>">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/construction.jpg'); ?>" alt="<?php echo esc_attr__('Total Plus Demo', 'hashone'); ?>">
             </div>
 
             <div class="plugin-title-wrap">
@@ -33,7 +46,7 @@
 
         <div class="recommended-plugins">
             <div class="plugin-image">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/main-demo.jpg'); ?>" alt="<?php echo esc_attr__('Hashone Plus Demo', 'hashone'); ?>">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/main-demo.jpg'); ?>" alt="<?php echo esc_attr__('Total Plus Demo', 'hashone'); ?>">
             </div>
 
             <div class="plugin-title-wrap">
@@ -46,7 +59,7 @@
 
         <div class="recommended-plugins">
             <div class="plugin-image">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/creative-agency.jpg'); ?>" alt="<?php echo esc_attr__('Hashone Plus Demo', 'hashone'); ?>">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/creative-agency.jpg'); ?>" alt="<?php echo esc_attr__('Total Plus Demo', 'hashone'); ?>">
             </div>
 
             <div class="plugin-title-wrap">
@@ -59,7 +72,7 @@
 
         <div class="recommended-plugins">
             <div class="plugin-image">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/one-page.jpg'); ?>" alt="<?php echo esc_attr__('Hashone Plus Demo', 'hashone'); ?>">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/one-page.jpg'); ?>" alt="<?php echo esc_attr__('Total Plus Demo', 'hashone'); ?>">
             </div>
 
             <div class="plugin-title-wrap">
@@ -82,4 +95,3 @@
 
     <a class="upgrade-button" href="https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-footer&utm_campaign=hashone-upgrade" target="_blank"><?php esc_html_e('Upgrade Now', 'hashone'); ?></a>
 </div>
-

@@ -22,7 +22,7 @@
 
     <div class="welcome-promo-banner">
         <a class="welcome-promo-offer" href="<?php echo esc_url('https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-welcome&utm_campaign=hashone-upgrade'); ?>" target="_blank"><?php echo esc_html__('Unlock all the possibilities with Total Plus.', 'hashone'); ?></a>
-        <a href="<?php echo esc_url('https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-welcome&utm_campaign=hashone-upgrade'); ?>" target="_blank" class="button button-primary upgrade-btn"><?php echo esc_html__('Upgrade for $55', 'hashone'); ?></a>
+        <a href="<?php echo esc_url('https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-welcome&utm_campaign=hashone-upgrade'); ?>" target="_blank" class="button button-primary upgrade-btn"><?php echo esc_html__('Upgrade for $65', 'hashone'); ?></a>
     </div>
 </div>
 
