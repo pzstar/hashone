@@ -2290,7 +2290,7 @@ if (!class_exists('TGMPA_List_Table')) {
 
             return sprintf(
                     /* translators: 1: install status, 2: update status */
-                    _x('%1$s, %2$s', 'Install/Update Status', 'hashone'), $install_status, $update_status
+                    esc_html_x('%1$s, %2$s', 'Install/Update Status', 'hashone'), $install_status, $update_status
             );
         }
 
@@ -2420,7 +2420,7 @@ if (!class_exists('TGMPA_List_Table')) {
             $output = array();
 
             if ($this->tgmpa->is_plugin_installed($item['slug'])) {
-                $installed = !empty($item['installed_version']) ? $item['installed_version'] : _x('unknown', 'as in: "version nr unknown"', 'hashone');
+                $installed = !empty($item['installed_version']) ? $item['installed_version'] : esc_html_x('unknown', 'as in: "version nr unknown"', 'hashone');
 
                 $color = '';
                 if (!empty($item['minimum_version']) && $this->tgmpa->does_plugin_require_update($item['slug'])) {
