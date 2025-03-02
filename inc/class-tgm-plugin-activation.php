@@ -2245,7 +2245,7 @@ if (!class_exists('TGMPA_List_Table')) {
                     $string = esc_html__('WordPress Repository', 'hashone');
                     break;
                 case 'external':
-                    $string = esc_html__(_html__('External Source', 'hashone');
+                    $string = esc_html__('External Source', 'hashone');
                     break;
                 case 'bundled':
                     $string = esc_html__('Pre-Packaged', 'hashone');
@@ -2271,7 +2271,7 @@ if (!class_exists('TGMPA_List_Table')) {
             if (!$this->tgmpa->is_plugin_active($slug)) {
                 $install_status = esc_html__('Installed But Not Activated', 'hashone');
             } else {
-                $install_status = esc_html__(_html__('Active', 'hashone');
+                $install_status = esc_html__('Active', 'hashone');
             }
 
             $update_status = '';
@@ -2481,7 +2481,7 @@ if (!class_exists('TGMPA_List_Table')) {
             $columns = array(
                 'cb' => '<input type="checkbox" />',
                 'plugin' => esc_html__('Plugin', 'hashone'),
-                'source' => esc_html__(_html__('Source', 'hashone'),
+                'source' => esc_html__('Source', 'hashone'),
                 'type' => esc_html__('Type', 'hashone'),
             );
 
