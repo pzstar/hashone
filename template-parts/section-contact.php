@@ -5,7 +5,7 @@
  */
 if (get_theme_mod('hashone_disable_contact_sec') != 'on') {
     ?>
-    <section id="hs-contact-section" data-stellar-background-ratio="0.2">
+    <section id="hs-contact-section" data-pllx-bg-ratio="0.2">
         <div class="hs-contact-section hs-section">
             <div class="hs-contact-overlay"></div>
             <div class="hs-container">

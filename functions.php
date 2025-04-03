@@ -246,7 +246,6 @@ function hashone_scripts() {
     wp_enqueue_script('owl-carousel', get_template_directory_uri() . '/js/owl.carousel.js', array('jquery'), '1.3.3', true);
     wp_enqueue_script('isotope-pkgd', get_template_directory_uri() . '/js/isotope.pkgd.js', array('jquery', 'imagesloaded'), '20150903', true);
     wp_enqueue_script('nivo-lightbox', get_template_directory_uri() . '/js/nivo-lightbox.js', array('jquery'), '20150903', true);
-    wp_enqueue_script('jquery-stellar', get_template_directory_uri() . '/js/jquery.stellar.js', array('jquery', 'imagesloaded'), '20150903', true);
     wp_enqueue_script('wow', get_template_directory_uri() . '/js/wow.js', array('jquery'), '20150903', true);
     wp_enqueue_script('odometer', get_template_directory_uri() . '/js/odometer.js', array(), '20150903', true);
     wp_enqueue_script('waypoint', get_template_directory_uri() . '/js/waypoint.js', array(), '20150903', true);

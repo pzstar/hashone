@@ -5,7 +5,7 @@
  */
 if (get_theme_mod('hashone_disable_counter_sec') != 'on') {
     ?>
-    <section id="hs-counter-section" data-stellar-background-ratio="0.4">
+    <section id="hs-counter-section" data-pllx-bg-ratio="0.4">
         <div class="hs-counter-section hs-section">
             <div class="hs-counter-overlay"></div>
             <div class="hs-container">

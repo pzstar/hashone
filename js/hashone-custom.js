@@ -81,16 +81,27 @@ jQuery(function ($) {
 
     $('.hs-portfolio-image').nivoLightbox();
 
-    $('body').imagesLoaded({background: '.hs-section'}, function () {
-        $.stellar({
-            horizontalScrolling: false,
-            verticalOffset: 40,
+    $(window).on("scroll", function () {
+        $("[data-pllx-bg-ratio]").each(function () {
+            const $section = $(this);
+            const scrollPosition = $(window).scrollTop();
+            const offset = $section.offset().top; // Section's distance from top of the document
+            const speed = $(this).attr('data-pllx-bg-ratio'); // Adjust this value for parallax speed
+            var additionalOffset = 0;
 
+            if ($(this).attr('data-pllx-vertical-offset')) {
+                additionalOffset = parseInt($(this).attr('data-pllx-vertical-offset'));
+            }
+
+            // Update the background position if the section is in view
+            if (
+                scrollPosition + $(window).height() > offset &&
+                scrollPosition < offset + $section.outerHeight()
+            ) {
+                const backgroundPosition = additionalOffset + ((scrollPosition - offset) * speed * -1);
+                $section.css("background-position", `center ${backgroundPosition}px`);
+            }
         });
-    });
-
-    $(window).resize(function () {
-        $.stellar('refresh');
     });
 
     wow = new WOW({
