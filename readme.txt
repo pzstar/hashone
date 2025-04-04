@@ -2,7 +2,7 @@
 Contributors: hashthemes
 Requires at least: 6.3
 Tested up to: 6.7
-Stable tag: 1.3.5
+Stable tag: 1.3.6
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -22,6 +22,9 @@ Hash One is a beautiful WordPress theme with lots of featured packed option to c
 
 
 == Changelog ==
+= 1.3.6 - Apr 4, 2025 =
+* Stellar JS replaced with custom js (Mobile scroll issue) - Fixed
+
 = 1.3.5 - Mar 2, 2025 =
 * Text traslation - Fixed
 
