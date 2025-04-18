@@ -2,8 +2,6 @@
 if (!class_exists('Hashone_Welcome')) :
 
     class Hashone_Welcome {
-
-        public $tab_sections = array();
         public $theme_name = ''; // For storing Theme Name
         public $theme_version = ''; // For Storing Theme Current Version Information
         public $free_plugins = array(); // For Storing the list of the Recommended Free Plugins
@@ -18,14 +16,6 @@ if (!class_exists('Hashone_Welcome')) :
             $theme = wp_get_theme();
             $this->theme_name = $theme->Name;
             $this->theme_version = $theme->Version;
-
-            /** Define Tabs Sections */
-            $this->tab_sections = array(
-                'getting_started' => esc_html__('Getting Started', 'hashone'),
-                'recommended_plugins' => esc_html__('Recommended Plugins', 'hashone'),
-                'support' => esc_html__('Support', 'hashone'),
-                'free_vs_pro' => esc_html__('Free Vs Pro', 'hashone')
-            );
 
             /** List of Recommended Free Plugins */
             $this->free_plugins = array(
@@ -159,7 +149,13 @@ if (!class_exists('Hashone_Welcome')) :
 
         /** Welcome Page */
         public function welcome_screen() {
-            $tabs = $this->tab_sections;
+            /** Define Tabs Sections */
+            $tabs = array(
+                'getting_started' => esc_html__('Getting Started', 'hashone'),
+                'recommended_plugins' => esc_html__('Recommended Plugins', 'hashone'),
+                'support' => esc_html__('Support', 'hashone'),
+                'free_vs_pro' => esc_html__('Free Vs Pro', 'hashone')
+            );
             ?>
             <div class="welcome-wrap">
                 <div class="welcome-main-content">
