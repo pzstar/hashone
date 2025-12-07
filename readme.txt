@@ -1,9 +1,9 @@
 === HashOne ===
 Contributors: hashthemes
 Requires at least: 6.3
-Tested up to: 6.7
-Stable tag: 1.3.7
-Requires PHP: 7.4
+Tested up to: 6.9
+Stable tag: 1.3.8
+Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,9 @@ Hash One is a beautiful WordPress theme with lots of featured packed option to c
 
 
 == Changelog ==
+= 1.3.8 - Dec 07, 2025 =
+* Compatibilty test with latest version of WordPress
+
 = 1.3.7 - Apr 18, 2025 =
 * Notice: Function loadtextdomain_just_in_time was called incorrectly - Fixed
 

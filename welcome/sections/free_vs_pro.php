@@ -64,7 +64,7 @@
     </tr>
     <tr>
         <td>
-            <span><?php esc_html_e('5) Elementor Widgets', 'hashone'); ?> - <a href="https://hashthemes.com/documentation/total-plus-plugin-documentation/#I)ElementorModule" target="_blank"><?php esc_html_e('View Demo', 'hashone'); ?></a></span>
+            <span><?php esc_html_e('5) Elementor Widgets', 'hashone'); ?> - <a href="https://hashthemes.com/documentation/total-plus-plugin-documentation/#I.ElementorModule" target="_blank"><?php esc_html_e('View Demo', 'hashone'); ?></a></span>
             <p><?php esc_html_e('Elementor provides you with unlimited possibilities to create the website of your imagination.', 'hashone'); ?></p>
         </td>
         <td>10 Widgets</td>
@@ -72,7 +72,7 @@
     </tr>
     <tr>
         <td>
-            <span><?php esc_html_e('6) Elementor Section Extenders', 'hashone'); ?> - <a href="https://hashthemes.com/documentation/total-plus-plugin-documentation/#II)ElementorExtender" target="_blank"><?php esc_html_e('View Demo', 'hashone'); ?></a></span>
+            <span><?php esc_html_e('6) Elementor Section Extenders', 'hashone'); ?> - <a href="https://hashthemes.com/documentation/total-plus-plugin-documentation/#II.ElementorExtender" target="_blank"><?php esc_html_e('View Demo', 'hashone'); ?></a></span>
             <p><?php esc_html_e('You can extend the Elementor section with amazing interactive extenders like Parallax Background, Parallax Animation, Colors Animation, Water Ripples, Particles Background, Background Effects & lot more.', 'hashone'); ?></p>
         </td>
         <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
