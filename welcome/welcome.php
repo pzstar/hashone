@@ -55,6 +55,12 @@ if (!class_exists('Hashone_Welcome')) :
                     'filename' => 'mini-ajax-woo-cart',
                     'thumb_path' => 'https://ps.w.org/mini-ajax-woo-cart/assets/icon-256x256.gif'
                 ),
+                'onyx-dark-mode-switcher' => array(
+                    'name' => 'Onyx Dark Mode Switcher',
+                    'slug' => 'onyx-dark-mode-switcher',
+                    'filename' => 'onyx-dark-mode-switcher',
+                    'thumb_path' => 'https://ps.w.org/onyx-dark-mode-switcher/assets/icon-256x256.png'
+                )
             );
 
             /* Create a Welcome Page */
