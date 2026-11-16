@@ -215,3 +215,155 @@ if (!function_exists('hashone_register_required_plugins')) {
 }
 
 add_action('tgmpa_register', 'hashone_register_required_plugins');
+
+if (!function_exists('hashone_get_active_campaign')) {
+
+    /*
+     *  The Total Plus seasonal sale currently running, or false. Its badge,
+     *  title and button replace the Customizer upgrade card's copy.
+     *
+     *  Windows are month-day so they repeat every year without anyone having to
+     *  edit a date. Filterable so a campaign can be added or the dates moved
+     *  without touching the theme.
+     */
+
+    function hashone_get_active_campaign() {
+        $campaigns = apply_filters('hashone_upgrade_campaigns', array(
+            array(
+                'id' => 'blackfriday',
+                'image' => 'sale-blackfriday.jpg',
+                'start' => '11-20',
+                'end' => '12-02',
+                'title' => esc_html__('Black Friday - our biggest discount of the year', 'hashone'),
+                'badge' => esc_html__('Black Friday Sale', 'hashone'),
+                'button' => esc_html__('Get the Black Friday Deal', 'hashone')
+            ),
+            array(
+                'id' => 'newyear',
+                'image' => 'sale-holiday.jpg',
+                'start' => '12-15',
+                'end' => '01-05',
+                'title' => esc_html__('Christmas & New Year Sale', 'hashone'),
+                'badge' => esc_html__('Holiday Sale', 'hashone'),
+                'button' => esc_html__('Get the Holiday Deal', 'hashone')
+            )
+        ));
+
+        $today = current_time('m-d');
+
+        foreach ($campaigns as $campaign) {
+            if (empty($campaign['start']) || empty($campaign['end'])) {
+                continue;
+            }
+
+            // A window that wraps the new year (e.g. 12-15 to 01-05).
+            if ($campaign['end'] < $campaign['start']) {
+                $running = ($today >= $campaign['start'] || $today <= $campaign['end']);
+            } else {
+                $running = ($today >= $campaign['start'] && $today <= $campaign['end']);
+            }
+
+            if ($running) {
+                return $campaign;
+            }
+        }
+
+        return false;
+    }
+
+}
+
+if (!function_exists('hashone_premium_demo_config')) {
+
+    /*
+     *  Total Plus demos shown as Premium in the HashThemes Demo Importer,
+     *  after HashOne's own free demo.
+     */
+
+    function hashone_premium_demo_config($demos) {
+        $premium_demos = array(
+            'gym' => array(
+                'name' => 'Total Plus - Gym & Fitness',
+                'type' => 'pro',
+                'buy_url' => 'https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-demo-importer&utm_campaign=hashone-upgrade',
+                'image' => 'https://hashthemes.com/import-files/totalplus/screen/gym.jpg',
+                'preview_url' => 'https://demo.hashthemes.com/total-plus/gym/',
+            ),
+            'medical' => array(
+                'name' => 'Total Plus - Medical Center',
+                'type' => 'pro',
+                'buy_url' => 'https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-demo-importer&utm_campaign=hashone-upgrade',
+                'image' => 'https://hashthemes.com/import-files/totalplus/screen/medical.jpg',
+                'preview_url' => 'https://demo.hashthemes.com/total-plus/medical/',
+            ),
+            'law-firm' => array(
+                'name' => 'Total Plus - Law Firm',
+                'type' => 'pro',
+                'buy_url' => 'https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-demo-importer&utm_campaign=hashone-upgrade',
+                'image' => 'https://hashthemes.com/import-files/totalplus/screen/law-firm.jpg',
+                'preview_url' => 'https://demo.hashthemes.com/total-plus/law-firm/',
+            ),
+            'wave' => array(
+                'name' => 'Total Plus - Wave',
+                'type' => 'pro',
+                'buy_url' => 'https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-demo-importer&utm_campaign=hashone-upgrade',
+                'image' => 'https://hashthemes.com/import-files/totalplus/screen/wave.jpg',
+                'preview_url' => 'https://demo.hashthemes.com/total-plus/wave/',
+            ),
+            'cafe' => array(
+                'name' => 'Total Plus - Cafe',
+                'type' => 'pro',
+                'buy_url' => 'https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-demo-importer&utm_campaign=hashone-upgrade',
+                'image' => 'https://hashthemes.com/import-files/totalplus/screen/cafe.jpg',
+                'preview_url' => 'https://demo.hashthemes.com/total-plus/cafe/',
+            ),
+            'hotel-plus' => array(
+                'name' => 'Total Plus - Hotel Plus',
+                'type' => 'pro',
+                'buy_url' => 'https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-demo-importer&utm_campaign=hashone-upgrade',
+                'image' => 'https://hashthemes.com/import-files/totalplus/screen/hotel-plus.jpg',
+                'preview_url' => 'https://demo.hashthemes.com/total-plus/hotel/',
+            ),
+            'total' => array(
+                'name' => 'Total Plus - Total',
+                'type' => 'pro',
+                'buy_url' => 'https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-demo-importer&utm_campaign=hashone-upgrade',
+                'image' => 'https://hashthemes.com/import-files/totalplus/screen/total.jpg',
+                'preview_url' => 'https://demo.hashthemes.com/total-plus/total/',
+            ),
+            'construction' => array(
+                'name' => 'Total Plus - Construction',
+                'type' => 'pro',
+                'buy_url' => 'https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-demo-importer&utm_campaign=hashone-upgrade',
+                'image' => 'https://hashthemes.com/import-files/totalplus/screen/construction.jpg',
+                'preview_url' => 'https://demo.hashthemes.com/total-plus/construction/',
+            ),
+            'main-demo' => array(
+                'name' => 'Total Plus - Main Demo',
+                'type' => 'pro',
+                'buy_url' => 'https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-demo-importer&utm_campaign=hashone-upgrade',
+                'image' => 'https://hashthemes.com/import-files/totalplus/screen/main-demo.jpg',
+                'preview_url' => 'https://demo.hashthemes.com/total-plus/main/',
+            ),
+            'creative-agency' => array(
+                'name' => 'Total Plus - Creative Agency',
+                'type' => 'pro',
+                'buy_url' => 'https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-demo-importer&utm_campaign=hashone-upgrade',
+                'image' => 'https://hashthemes.com/import-files/totalplus/screen/creative-agency.jpg',
+                'preview_url' => 'https://demo.hashthemes.com/total-plus/creative-agency/',
+            ),
+            'one-page' => array(
+                'name' => 'Total Plus - One Page',
+                'type' => 'pro',
+                'buy_url' => 'https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-demo-importer&utm_campaign=hashone-upgrade',
+                'image' => 'https://hashthemes.com/import-files/totalplus/screen/one-page.jpg',
+                'preview_url' => 'https://demo.hashthemes.com/total-plus/one-page/',
+            ),
+        );
+
+        return array_merge($demos, $premium_demos);
+    }
+
+}
+
+add_filter('hdi_import_files', 'hashone_premium_demo_config');

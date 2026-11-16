@@ -2,7 +2,7 @@
 Contributors: hashthemes
 Requires at least: 6.3
 Tested up to: 6.9
-Stable tag: 1.3.9
+Stable tag: 1.4.0
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -22,6 +22,17 @@ Hash One is a beautiful WordPress theme with lots of featured packed option to c
 
 
 == Changelog ==
+= 1.4.0 - Nov 16, 2026 =
+* Settings page redesigned, with a compact header, a Total Plus card, clearer tabs, a setup checklist, Customizer shortcuts and rewritten help text - Changed
+* Gym & Fitness, Medical Center and Law Firm Total Plus demos on the Settings page - Added
+* Black Friday and Christmas & New Year sale banners redesigned - Changed
+* Customizer upgrade box redesigned, with the main Total Plus features, the price and the 7-day money-back guarantee - Changed
+* Customizer checkboxes replaced with on/off switches, and Customizer labels corrected - Changed
+* Font Awesome updated from 4.6.3 to 7.3.1, with the Font Awesome 4 compatibility rules in the same stylesheet, so every icon name the theme uses keeps working - Changed
+* Meanpath and TripAdvisor icons, which Font Awesome no longer includes, removed from the icon picker - Removed
+* Font Awesome now loads under the same stylesheet handle as in the other HashThemes themes and plugins, so it loads only once - Changed
+* Unused files - Removed
+
 = 1.3.9 - Jan 18, 2026 =
 * Recommended plugin added
 
@@ -140,8 +151,8 @@ License: MIT (http://opensource.org/licenses/MIT)
 * jQuery OwlCarousel - Copyright (c) 2013 Bartosz Wojciechowski - http://www.owlgraphic.com/owlcarousel/
 License: MIT (http://opensource.org/licenses/MIT)
 
-*Font Awesome by @davegandy - http://fontawesome.io/
-License: (Font: SIL OFL 1.1, CSS: MIT License)
+* Font Awesome Free 7.3.1 - Copyright Fonticons, Inc. - https://fontawesome.com
+License: Icons CC BY 4.0, Fonts SIL OFL 1.1, Code MIT License (https://fontawesome.com/license/free)
 
 * Open Sans Font by Steve Matteson - https://www.google.com/fonts/specimen/Open+Sans
 License: Apache License, version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html)

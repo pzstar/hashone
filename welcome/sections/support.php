@@ -1,17 +1,31 @@
-<div class="support-wrap">
-    <div class="support-col">
+<div class="welcome-grid welcome-grid-3 welcome-support">
+    <div class="welcome-card welcome-help">
+        <span class="welcome-help-icon dashicons dashicons-media-document" aria-hidden="true"></span>
         <h3><?php echo esc_html__('Documentation', 'hashone'); ?></h3>
         <p><?php
-            printf(
-                    /* translators: Theme Name */
-                    esc_html__('Read the detailed documentation of the theme. The documentation contains all the necessary information required to set up the %s theme.', 'hashone'), esc_html($this->theme_name));
-            ?></p>
-        <a class="button button-primary" target="_blank" href="https://hashthemes.com/documentation/hashone-documentation/"><?php echo esc_html__('Read Full Documentation', 'hashone'); ?></a>
+        printf(
+            /* translators: Theme Name */
+            esc_html__('Step-by-step guides for every part of %s, from importing a demo and building the home page to each Customizer option.', 'hashone'), esc_html($this->theme_name));
+        ?></p>
+        <a class="welcome-btn welcome-btn-primary" target="_blank" href="https://hashthemes.com/documentation/hashone-documentation/"><?php echo esc_html__('Read Full Documentation', 'hashone'); ?></a>
     </div>
 
-    <div class="support-col">
-        <h3><?php echo esc_html__('Create Support Tickets', 'hashone'); ?></h3>
-        <p><?php echo esc_html__('Still, having problems after reading all the documentation? No Problem!! Please create a support ticket. Our dedicated support team will help you to solve your problem.', 'hashone'); ?></p>
-        <a class="button button-primary" target="_blank" href="https://hashthemes.com/support/forum/hashone/"><?php echo esc_html__('Create Support Tickets', 'hashone'); ?></a>
+    <div class="welcome-card welcome-help">
+        <span class="welcome-help-icon dashicons dashicons-format-chat" aria-hidden="true"></span>
+        <h3><?php echo esc_html__('Get Support', 'hashone'); ?></h3>
+        <p><?php echo esc_html__('Stuck on something the documentation does not answer? Open a support ticket and our team will help you sort it out.', 'hashone'); ?></p>
+        <a class="welcome-btn welcome-btn-primary" target="_blank" href="https://hashthemes.com/support/forum/hashone/"><?php echo esc_html__('Open a Support Ticket', 'hashone'); ?></a>
+    </div>
+
+    <div class="welcome-card welcome-help">
+        <span class="welcome-help-icon dashicons dashicons-star-filled" aria-hidden="true"></span>
+        <h3><?php echo esc_html__('Rate the Theme', 'hashone'); ?></h3>
+        <p>
+            <?php
+            /* translators: %s: theme name */
+            printf(esc_html__('Enjoying %s? A short review on WordPress.org helps other people find the theme and keeps us improving it.', 'hashone'), esc_html($this->theme_name));
+            ?>
+        </p>
+        <a class="welcome-btn welcome-btn-primary" target="_blank" href="https://wordpress.org/support/theme/hashone/reviews/?filter=5#new-post"><?php echo esc_html__('Leave a Review', 'hashone'); ?></a>
     </div>
 </div>

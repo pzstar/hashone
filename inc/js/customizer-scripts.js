@@ -17,11 +17,18 @@ jQuery(document).ready(function ($) {
     $('body').on('click', '.onoffswitch', function () {
         var $this = $(this);
         if ($this.hasClass('switch-on')) {
-            $(this).removeClass('switch-on');
+            $(this).removeClass('switch-on').attr('aria-checked', 'false');
             $this.next('input').val('off').trigger('change')
         } else {
-            $(this).addClass('switch-on');
+            $(this).addClass('switch-on').attr('aria-checked', 'true');
             $this.next('input').val('on').trigger('change')
+        }
+    });
+
+    $('body').on('keydown', '.onoffswitch', function (e) {
+        if (e.which === 13 || e.which === 32) {
+            e.preventDefault();
+            $(this).trigger('click');
         }
     });
 
@@ -164,6 +171,14 @@ function scrollToSection(section_id) {
 
 // Extends our custom section.
 (function (api) {
+
+    // The upgrade card at the top: never expands, always shown.
+    api.sectionConstructor['ht--pro-banner'] = api.Section.extend({
+        attachEvents: function () {},
+        isContextuallyActive: function () {
+            return true;
+        }
+    });
 
     api.sectionConstructor['pro-section'] = api.Section.extend({
 

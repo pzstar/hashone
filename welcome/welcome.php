@@ -31,8 +31,14 @@ if (!class_exists('Hashone_Welcome')) :
                     'filename' => 'elementor',
                     'thumb_path' => 'https://ps.w.org/elementor/assets/icon-256x256.gif'
                 ),
+                'easy-elementor-addons' => array(
+                    'name' => 'Easy Elementor Addons',
+                    'slug' => 'easy-elementor-addons',
+                    'filename' => 'easy-elementor-addons',
+                    'thumb_path' => 'https://ps.w.org/easy-elementor-addons/assets/icon-256x256.png'
+                ),
                 'hash-form' => array(
-                    'name' => 'Hash Form - Drag & Drop Form Builder',
+                    'name' => 'Hash Form Builder',
                     'slug' => 'hash-form',
                     'filename' => 'hash-form',
                     'thumb_path' => 'https://ps.w.org/hash-form/assets/icon-256x256.gif'
@@ -95,7 +101,7 @@ if (!class_exists('Hashone_Welcome')) :
         public function admin_notice_content() {
             $screen = get_current_screen();
 
-            if ('appearance_page_hashone-welcome' === $screen->id || (isset($screen->parent_file) && 'plugins.php' === $screen->parent_file && 'update' === $screen->id) || 'theme-install' === $screen->id) {
+            if ('toplevel_page_hashone-welcome' === $screen->id || (isset($screen->parent_file) && 'plugins.php' === $screen->parent_file && 'update' === $screen->id) || 'theme-install' === $screen->id) {
                 return;
             }
 
@@ -104,7 +110,7 @@ if (!class_exists('Hashone_Welcome')) :
             <div class="updated notice hashone-welcome-notice">
                 <div class="hashone-welcome-notice-wrap">
                     <h2><?php esc_html_e('Congratulations!', 'hashone'); ?></h2>
-                    <p><?php printf(esc_html__('%1$s is now installed and ready to use. You can start either by importing the ready made demo or get started by customizing it your self.', 'hashone'), $this->theme_name); ?></p>
+                    <p><?php /* translators: %1$s: theme name */ printf(esc_html__('%1$s is installed and ready to use. Start from the ready-made demo, or set up the site yourself.', 'hashone'), $this->theme_name); ?></p>
 
                     <div class="hashone-welcome-info">
                         <div class="hashone-welcome-thumb">
@@ -116,7 +122,7 @@ if (!class_exists('Hashone_Welcome')) :
                             ?>
                             <div class="hashone-welcome-import">
                                 <h3><?php esc_html_e('Import Demo', 'hashone'); ?></h3>
-                                <p><?php esc_html_e('Click below to install and active HashThemes Demo Importer Plugin.', 'hashone'); ?></p>
+                                <p><?php esc_html_e('Install and activate the HashThemes Demo Importer plugin to import the demo in one click.', 'hashone'); ?></p>
                                 <p><?php echo $this->generate_hdi_install_button(); ?></p>
                             </div>
                             <?php
@@ -125,8 +131,8 @@ if (!class_exists('Hashone_Welcome')) :
 
                         <div class="hashone-welcome-getting-started">
                             <h3><?php esc_html_e('Get Started', 'hashone'); ?></h3>
-                            <p><?php printf(esc_html__('Here you will find all the necessary links and information on how to use %s.', 'hashone'), $this->theme_name); ?></p>
-                            <p><a href="<?php echo esc_url(admin_url('admin.php?page=hashone-welcome')); ?>" class="button button-primary"><?php esc_html_e('Go to Setting Page', 'hashone'); ?></a></p>
+                            <p><?php /* translators: %s: theme name */ printf(esc_html__('A setup checklist, Customizer shortcuts and help for getting the most out of %s.', 'hashone'), $this->theme_name); ?></p>
+                            <p><a href="<?php echo esc_url(admin_url('admin.php?page=hashone-welcome')); ?>" class="button button-primary"><?php esc_html_e('Go to Settings Page', 'hashone'); ?></a></p>
                         </div>
                     </div>
 
@@ -157,28 +163,21 @@ if (!class_exists('Hashone_Welcome')) :
         public function welcome_screen() {
             /** Define Tabs Sections */
             $tabs = array(
-                'getting_started' => esc_html__('Getting Started', 'hashone'),
-                'recommended_plugins' => esc_html__('Recommended Plugins', 'hashone'),
-                'support' => esc_html__('Support', 'hashone'),
-                'free_vs_pro' => esc_html__('Free Vs Pro', 'hashone')
+                'getting_started' => array(esc_html__('Getting Started', 'hashone'), 'dashicons-flag'),
+                'recommended_plugins' => array(esc_html__('Recommended Plugins', 'hashone'), 'dashicons-admin-plugins'),
+                'support' => array(esc_html__('Help & Support', 'hashone'), 'dashicons-sos'),
+                'free_vs_pro' => array(esc_html__('Free vs Pro', 'hashone'), 'dashicons-star-filled')
             );
+            $section = isset($_GET['section']) && array_key_exists($_GET['section'], $tabs) ? sanitize_key($_GET['section']) : 'getting_started';
             ?>
             <div class="welcome-wrap">
-                <div class="welcome-main-content">
-                    <?php require_once get_template_directory() . '/welcome/sections/header.php'; ?>
+                <?php require_once get_template_directory() . '/welcome/sections/header.php'; ?>
 
-                    <div class="welcome-section-wrapper">
-                        <?php $section = isset($_GET['section']) && array_key_exists($_GET['section'], $tabs) ? $_GET['section'] : 'getting_started'; ?>
-
-                        <div class="welcome-section <?php echo esc_attr($section); ?> clearfix">
-                            <?php require_once get_template_directory() . '/welcome/sections/' . $section . '.php'; ?>
-                        </div>
-                    </div>
+                <div class="welcome-section welcome-section-<?php echo esc_attr($section); ?>">
+                    <?php require_once get_template_directory() . '/welcome/sections/' . $section . '.php'; ?>
                 </div>
 
-                <div class="welcome-footer-content">
-                    <?php require_once get_template_directory() . '/welcome/sections/footer.php'; ?>
-                </div>
+                <?php require_once get_template_directory() . '/welcome/sections/footer.php'; ?>
             </div>
             <?php
         }
@@ -194,7 +193,8 @@ if (!class_exists('Hashone_Welcome')) :
                     'error' => esc_html__('Error! Reload the page and try again.', 'hashone'),
                     'ajax_nonce' => wp_create_nonce('hashone_activate_hdi_plugin')
                 );
-                wp_enqueue_style('hashone-welcome', get_template_directory_uri() . '/welcome/css/welcome.css', array(), HASHONE_VERSION);
+                // One stylesheet for both directions: it uses logical properties.
+                wp_enqueue_style('hashone-welcome', get_template_directory_uri() . '/welcome/css/welcome.css', array('dashicons'), HASHONE_VERSION);
                 wp_enqueue_script('hashone-welcome', get_template_directory_uri() . '/welcome/js/welcome.js', array('plugin-install', 'updates'), HASHONE_VERSION, true);
                 wp_localize_script('hashone-welcome', 'importer_params', $importer_params);
             }
@@ -272,7 +272,8 @@ if (!class_exists('Hashone_Welcome')) :
             $screen = get_current_screen();
 
             if ('toplevel_page_hashone-welcome' == $screen->id) {
-                $text = sprintf(esc_html__('Please leave us a %s rating if you like our theme . A huge thank you from HashThemes in advance!', 'hashone'), '<a href="https://wordpress.org/support/theme/hashone/reviews/?filter=5#new-post" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a>');
+                /* translators: %s: five-star link */
+                $text = sprintf(esc_html__('Enjoying HashOne? Please leave us a %s rating on WordPress.org. Thank you from the HashThemes team!', 'hashone'), '<a href="https://wordpress.org/support/theme/hashone/reviews/?filter=5#new-post" target="_blank">&#9733;&#9733;&#9733;&#9733;&#9733;</a>');
             }
 
             return $text;
@@ -295,6 +296,87 @@ if (!class_exists('Hashone_Welcome')) :
                 $import_button_text = esc_html__('Install Demo Importer Plugin', 'hashone');
             }
             return '<a data-slug="' . esc_attr($slug) . '" data-filename="' . esc_attr($filename) . '" class="' . esc_attr($import_class) . '" href="' . $import_url . '">' . esc_html($import_button_text) . '</a>';
+        }
+
+        /*
+         *  Setup checklist. Built on demand, not in the constructor: the class is
+         *  created before init, and translating there makes WordPress load the
+         *  text domain too early.
+         */
+        public function setup_steps() {
+            $demo_active = $this->check_plugin_active_state('hashthemes-demo-importer', 'hashthemes-demo-importer');
+            return array(
+                array(
+                    'title' => esc_html__('Add your slides', 'hashone'),
+                    'text' => esc_html__('Pick the pages to show in the home page slider. Each page\'s featured image becomes the slide.', 'hashone'),
+                    'done' => (bool) get_theme_mod('hashone_slider_page1'),
+                    'url' => admin_url('customize.php?autofocus[section]=hashone_slider_sec'),
+                ),
+                array(
+                    'title' => esc_html__('Fill in the home page sections', 'hashone'),
+                    'text' => esc_html__('Add your content to each section under Home Page Sections, and switch off the ones you do not need.', 'hashone'),
+                    'done' => (bool) get_theme_mod('hashone_about_page'),
+                    'url' => admin_url('customize.php?autofocus[panel]=hashone_home_panel'),
+                ),
+                array(
+                    'title' => esc_html__('Add your logo', 'hashone'),
+                    'text' => esc_html__('Upload a logo, or keep the site title as text.', 'hashone'),
+                    'done' => has_custom_logo(),
+                    'url' => admin_url('customize.php?autofocus[control]=custom_logo'),
+                ),
+                array(
+                    'title' => esc_html__('Set up the main menu', 'hashone'),
+                    'text' => esc_html__('Create a menu and assign it to the Primary Menu location.', 'hashone'),
+                    'done' => has_nav_menu('primary'),
+                    'url' => admin_url('customize.php?autofocus[panel]=nav_menus'),
+                ),
+                array(
+                    'title' => esc_html__('Import the demo (optional)', 'hashone'),
+                    'text' => esc_html__('Start from a ready-made website instead of an empty one.', 'hashone'),
+                    'done' => (bool) get_option('hdi_last_imported_demo'),
+                    'url' => $demo_active ? admin_url('themes.php?page=hdi-demo-importer') : '',
+                ),
+            );
+        }
+
+        // Shortcuts into the Customizer panels people look for most.
+        public function quick_links() {
+            $links = array(
+                array('dashicons-id', esc_html__('Site Identity', 'hashone'), 'section', 'title_tagline'),
+                array('dashicons-admin-appearance', esc_html__('Header', 'hashone'), 'section', 'hashone_header_bg_sec'),
+                array('dashicons-admin-home', esc_html__('Home Page Sections', 'hashone'), 'panel', 'hashone_home_panel'),
+                array('dashicons-images-alt2', esc_html__('Slider', 'hashone'), 'section', 'hashone_slider_sec'),
+                array('dashicons-art', esc_html__('Colors', 'hashone'), 'section', 'colors'),
+                array('dashicons-menu', esc_html__('Menus', 'hashone'), 'panel', 'nav_menus'),
+                array('dashicons-admin-post', esc_html__('Blog', 'hashone'), 'section', 'hashone_blog_section'),
+                array('dashicons-welcome-widgets-menus', esc_html__('Widgets', 'hashone'), 'panel', 'widgets'),
+                array('dashicons-editor-insertmore', esc_html__('Footer', 'hashone'), 'section', 'hashone_copyright_sec'),
+                array('dashicons-admin-generic', esc_html__('General', 'hashone'), 'panel', 'hashone_general_settings_panel'),
+            );
+
+            foreach ($links as $i => $link) {
+                $links[$i] = array(
+                    'icon' => $link[0],
+                    'label' => $link[1],
+                    'url' => admin_url('customize.php?autofocus[' . $link[2] . ']=' . $link[3]),
+                );
+            }
+
+            return $links;
+        }
+
+        // One-line plugin descriptions, built on demand for the same reason as setup_steps().
+        public function plugin_descriptions() {
+            return array(
+                'hashthemes-demo-importer' => esc_html__('Import the HashOne demo, with its content and settings, in one click.', 'hashone'),
+                'elementor' => esc_html__('Design pages visually with drag and drop.', 'hashone'),
+                'easy-elementor-addons' => esc_html__('Extra widgets and design tools for Elementor.', 'hashone'),
+                'hash-form' => esc_html__('Build contact forms, surveys and quotes with drag and drop.', 'hashone'),
+                'hash-elements' => esc_html__('Extra Elementor widgets from the makers of HashOne.', 'hashone'),
+                'simple-floating-menu' => esc_html__('Add a floating bar of buttons for calls, chat and social links.', 'hashone'),
+                'mini-ajax-woo-cart' => esc_html__('Add a mini cart that updates without reloading the page.', 'hashone'),
+                'onyx-dark-mode-switcher' => esc_html__('Let visitors switch your site to dark mode.', 'hashone'),
+            );
         }
 
         public function erase_hide_notice() {

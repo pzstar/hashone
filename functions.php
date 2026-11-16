@@ -255,7 +255,7 @@ function hashone_scripts() {
     wp_enqueue_style('hashone-style', get_stylesheet_uri(), array(), '1.0');
     wp_enqueue_style('hashone-fonts', hashone_fonts_url(), array(), null);
     wp_enqueue_style('animate', get_template_directory_uri() . '/css/animate.css', array(), '1.0');
-    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.4.0');
+    wp_enqueue_style('fontawesome-7.3.1', get_template_directory_uri() . '/css/font-awesome.css', array(), '7.3.1');
     wp_enqueue_style('owl-carousel', get_template_directory_uri() . '/css/owl.carousel.css', array(), '1.3.3');
     wp_enqueue_style('nivo-lightbox', get_template_directory_uri() . '/css/nivo-lightbox.css', array(), '1.3.3');
 

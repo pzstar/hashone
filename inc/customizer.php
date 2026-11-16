@@ -54,12 +54,28 @@ function hashone_customize_register($wp_customize) {
     );
 
     $wp_customize->register_section_type('Hashone_Customize_Section_Pro');
+    $wp_customize->register_section_type('Hashone_Pro_Banner_Section');
     
     // Register sections.
-    $wp_customize->add_section(new Hashone_Customize_Section_Pro($wp_customize, 'hashone-pro-section', array(
+    // Seasonal campaigns swap the banner copy automatically - see hashone_get_active_campaign().
+    // During a sale the card leads with the sale and drops the list price, which
+    // would contradict the discount shown at checkout.
+    $hashone_campaign = hashone_get_active_campaign();
+    $wp_customize->add_section(new Hashone_Pro_Banner_Section($wp_customize, 'hashone-pro-section', array(
         'priority' => 0,
-        'pro_text' => esc_html__('Upgrade to Pro', 'hashone'),
-        'pro_url' => 'https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-customizer-button&utm_campaign=hashone-upgrade'
+        'badge' => $hashone_campaign ? $hashone_campaign['badge'] : esc_html__('Total Plus', 'hashone'),
+        'title' => $hashone_campaign ? $hashone_campaign['title'] : esc_html__('Build a better website, faster', 'hashone'),
+        'points' => array(
+            esc_html__('AI Site Builder and Write with AI', 'hashone'),
+            esc_html__('11 premium one-click demos', 'hashone'),
+            esc_html__('21 home sections and 27 Elementor widgets', 'hashone')
+        ),
+        'price' => $hashone_campaign ? '' : '$65',
+        'price_note' => esc_html__('one-time · unlimited sites', 'hashone'),
+        'upgrade_text' => $hashone_campaign ? $hashone_campaign['button'] : esc_html__('Upgrade to Total Plus', 'hashone'),
+        'upgrade_url' => 'https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-customizer-button&utm_campaign=hashone-upgrade' . ($hashone_campaign ? '&utm_content=banner-' . $hashone_campaign['id'] : ''),
+        'note' => esc_html__('7-day money-back guarantee', 'hashone'),
+        'is_sale' => (bool) $hashone_campaign
     )));
 
     $wp_customize->add_section(new Hashone_Customize_Section_Pro($wp_customize, 'hashone-doc-section', array(
@@ -73,7 +89,7 @@ function hashone_customize_register($wp_customize) {
         'title' => esc_html__('Import Demo Content', 'hashone'),
         'priority' => 1001,
         'pro_text' => esc_html__('Import', 'hashone'),
-        'pro_url' => admin_url('/themes.php?page=hashone-welcome')
+        'pro_url' => admin_url('admin.php?page=hashone-welcome')
     )));
 
     /* ============GENERAL SETTINGS PANEL============ */
@@ -237,7 +253,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Switch_Control($wp_customize, 'hashone_disable_about_sec', array(
         'settings' => 'hashone_disable_about_sec',
         'section' => 'hashone_about_sec',
-        'label' => esc_html__('Disable About Section ', 'hashone'),
+        'label' => esc_html__('Disable About Section', 'hashone'),
         'on_off_label' => array(
             'on' => esc_html__('Yes', 'hashone'),
             'off' => esc_html__('No', 'hashone')
@@ -310,12 +326,11 @@ function hashone_customize_register($wp_customize) {
             'sanitize_callback' => 'absint'
         ));
 
-        $wp_customize->add_control('hashone_about_progressbar_disable' . $i, array(
+        $wp_customize->add_control(new Hashone_Toggle_Control($wp_customize, 'hashone_about_progressbar_disable' . $i, array(
             'settings' => 'hashone_about_progressbar_disable' . $i,
             'section' => 'hashone_about_sec',
-            'label' => esc_html__('Check to Disable', 'hashone'),
-            'type' => 'checkbox'
-        ));
+            'label' => esc_html__('Disable Progress Bar', 'hashone')
+        )));
 
         $wp_customize->add_control('hashone_about_progressbar_title' . $i, array(
             'settings' => 'hashone_about_progressbar_title' . $i,
@@ -352,7 +367,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Switch_Control($wp_customize, 'hashone_disable_featured_sec', array(
         'settings' => 'hashone_disable_featured_sec',
         'section' => 'hashone_featured_sec',
-        'label' => esc_html__('Disable Featured Section ', 'hashone'),
+        'label' => esc_html__('Disable Featured Section', 'hashone'),
         'on_off_label' => array(
             'on' => esc_html__('Yes', 'hashone'),
             'off' => esc_html__('No', 'hashone')
@@ -366,7 +381,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Customize_Heading($wp_customize, 'hashone_featured_heading', array(
         'settings' => 'hashone_featured_heading',
         'section' => 'hashone_featured_sec',
-        'label' => esc_html__('Featured Title / SubTitle ', 'hashone'),
+        'label' => esc_html__('Featured Title / Subtitle', 'hashone'),
     )));
 
     $wp_customize->add_setting('hashone_featured_title', array(
@@ -392,7 +407,7 @@ function hashone_customize_register($wp_customize) {
         'settings' => 'hashone_featured_desc',
         'section' => 'hashone_featured_sec',
         'type' => 'textarea',
-        'label' => esc_html__('Sub Title', 'hashone')
+        'label' => esc_html__('Subtitle', 'hashone')
     ));
 
 
@@ -451,7 +466,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Switch_Control($wp_customize, 'hashone_disable_portfolio_sec', array(
         'settings' => 'hashone_disable_portfolio_sec',
         'section' => 'hashone_portfolio_sec',
-        'label' => esc_html__('Disable Portfolio Section ', 'hashone'),
+        'label' => esc_html__('Disable Portfolio Section', 'hashone'),
         'on_off_label' => array(
             'on' => esc_html__('Yes', 'hashone'),
             'off' => esc_html__('No', 'hashone')
@@ -465,7 +480,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Customize_Heading($wp_customize, 'hashone_portfolio_heading', array(
         'settings' => 'hashone_portfolio_heading',
         'section' => 'hashone_portfolio_sec',
-        'label' => esc_html__('Portfolio Title/SubTitle', 'hashone'),
+        'label' => esc_html__('Portfolio Title/Subtitle', 'hashone'),
     )));
 
     $wp_customize->add_setting('hashone_portfolio_title', array(
@@ -491,7 +506,7 @@ function hashone_customize_register($wp_customize) {
         'settings' => 'hashone_portfolio_sub_title',
         'section' => 'hashone_portfolio_sec',
         'type' => 'textarea',
-        'label' => esc_html__('Sub Title', 'hashone')
+        'label' => esc_html__('Subtitle', 'hashone')
     ));
 
     //PORTFOLIO CHOICES
@@ -532,7 +547,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Switch_Control($wp_customize, 'hashone_disable_service_sec', array(
         'settings' => 'hashone_disable_service_sec',
         'section' => 'hashone_service_sec',
-        'label' => esc_html__('Disable Service Section ', 'hashone'),
+        'label' => esc_html__('Disable Service Section', 'hashone'),
         'on_off_label' => array(
             'on' => esc_html__('Yes', 'hashone'),
             'off' => esc_html__('No', 'hashone')
@@ -546,7 +561,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Customize_Heading($wp_customize, 'hashone_service_heading', array(
         'settings' => 'hashone_service_heading',
         'section' => 'hashone_service_sec',
-        'label' => esc_html__('Serivce Title / SubTitle', 'hashone'),
+        'label' => esc_html__('Service Title / Subtitle', 'hashone'),
     )));
 
     $wp_customize->add_setting('hashone_service_title', array(
@@ -572,7 +587,7 @@ function hashone_customize_register($wp_customize) {
         'settings' => 'hashone_service_sub_title',
         'section' => 'hashone_service_sec',
         'type' => 'textarea',
-        'label' => esc_html__('Sub Title', 'hashone')
+        'label' => esc_html__('Subtitle', 'hashone')
     ));
 
     //SERVICE PAGES
@@ -649,7 +664,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Switch_Control($wp_customize, 'hashone_disable_team_sec', array(
         'settings' => 'hashone_disable_team_sec',
         'section' => 'hashone_team_sec',
-        'label' => esc_html__('Disable Team Section ', 'hashone'),
+        'label' => esc_html__('Disable Team Section', 'hashone'),
         'on_off_label' => array(
             'on' => esc_html__('Yes', 'hashone'),
             'off' => esc_html__('No', 'hashone')
@@ -663,7 +678,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Customize_Heading($wp_customize, 'hashone_team_heading', array(
         'settings' => 'hashone_team_heading',
         'section' => 'hashone_team_sec',
-        'label' => esc_html__('Team Title / SubTitle ', 'hashone'),
+        'label' => esc_html__('Team Title / Subtitle', 'hashone'),
     )));
 
     $wp_customize->add_setting('hashone_team_title', array(
@@ -689,7 +704,7 @@ function hashone_customize_register($wp_customize) {
         'settings' => 'hashone_team_sub_title',
         'section' => 'hashone_team_sec',
         'type' => 'textarea',
-        'label' => esc_html__('Sub Title', 'hashone')
+        'label' => esc_html__('Subtitle', 'hashone')
     ));
 
     //TEAM PAGES
@@ -781,7 +796,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Switch_Control($wp_customize, 'hashone_disable_counter_sec', array(
         'settings' => 'hashone_disable_counter_sec',
         'section' => 'hashone_counter_sec',
-        'label' => esc_html__('Disable Counter Section ', 'hashone'),
+        'label' => esc_html__('Disable Counter Section', 'hashone'),
         'on_off_label' => array(
             'on' => esc_html__('Yes', 'hashone'),
             'off' => esc_html__('No', 'hashone')
@@ -795,7 +810,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Customize_Heading($wp_customize, 'hashone_counter_heading', array(
         'settings' => 'hashone_counter_heading',
         'section' => 'hashone_counter_sec',
-        'label' => esc_html__('Counter Title / SubTitle', 'hashone'),
+        'label' => esc_html__('Counter Title / Subtitle', 'hashone'),
     )));
 
     $wp_customize->add_setting('hashone_counter_title', array(
@@ -821,7 +836,7 @@ function hashone_customize_register($wp_customize) {
         'settings' => 'hashone_counter_sub_title',
         'section' => 'hashone_counter_sec',
         'type' => 'textarea',
-        'label' => esc_html__('Sub Title', 'hashone')
+        'label' => esc_html__('Subtitle', 'hashone')
     ));
 
     $wp_customize->add_setting('hashone_counter_bg_heading', array(
@@ -912,7 +927,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Switch_Control($wp_customize, 'hashone_disable_logo_sec', array(
         'settings' => 'hashone_disable_logo_sec',
         'section' => 'hashone_logo_sec',
-        'label' => esc_html__('Disable Logo Section ', 'hashone'),
+        'label' => esc_html__('Disable Logo Section', 'hashone'),
         'on_off_label' => array(
             'on' => esc_html__('Yes', 'hashone'),
             'off' => esc_html__('No', 'hashone')
@@ -926,7 +941,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Customize_Heading($wp_customize, 'hashone_logo_heading', array(
         'settings' => 'hashone_logo_heading',
         'section' => 'hashone_logo_sec',
-        'label' => esc_html__('Client Logo Title / SubTitle ', 'hashone'),
+        'label' => esc_html__('Client Logo Title / Subtitle', 'hashone'),
     )));
 
     $wp_customize->add_setting('hashone_logo_title', array(
@@ -952,7 +967,7 @@ function hashone_customize_register($wp_customize) {
         'settings' => 'hashone_logo_sub_title',
         'section' => 'hashone_logo_sec',
         'type' => 'textarea',
-        'label' => esc_html__('Sub Title', 'hashone')
+        'label' => esc_html__('Subtitle', 'hashone')
     ));
 
     //CLIENTS LOGOS
@@ -964,7 +979,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Customize_Heading($wp_customize, 'hashone_client_upload_heading', array(
         'settings' => 'hashone_client_upload_heading',
         'section' => 'hashone_logo_sec',
-        'label' => esc_html__('Upload Clients Logos ', 'hashone'),
+        'label' => esc_html__('Upload Clients Logos', 'hashone'),
     )));
 
     $wp_customize->add_setting('hashone_client_logo_image', array(
@@ -994,7 +1009,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Switch_Control($wp_customize, 'hashone_disable_testimonial_sec', array(
         'settings' => 'hashone_disable_testimonial_sec',
         'section' => 'hashone_testimonial_sec',
-        'label' => esc_html__('Disable Testimonial Section ', 'hashone'),
+        'label' => esc_html__('Disable Testimonial Section', 'hashone'),
         'on_off_label' => array(
             'on' => esc_html__('Yes', 'hashone'),
             'off' => esc_html__('No', 'hashone')
@@ -1008,7 +1023,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Customize_Heading($wp_customize, 'hashone_testimonial_heading', array(
         'settings' => 'hashone_testimonial_heading',
         'section' => 'hashone_testimonial_sec',
-        'label' => esc_html__('Testimonial Title / SubTitle ', 'hashone'),
+        'label' => esc_html__('Testimonial Title / Subtitle', 'hashone'),
     )));
 
     $wp_customize->add_setting('hashone_testimonial_title', array(
@@ -1034,7 +1049,7 @@ function hashone_customize_register($wp_customize) {
         'settings' => 'hashone_testimonial_sub_title',
         'section' => 'hashone_testimonial_sec',
         'type' => 'textarea',
-        'label' => esc_html__('Sub Title', 'hashone')
+        'label' => esc_html__('Subtitle', 'hashone')
     ));
 
     //TESTIMONIAL PAGES
@@ -1077,7 +1092,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Switch_Control($wp_customize, 'hashone_disable_blog_sec', array(
         'settings' => 'hashone_disable_blog_sec',
         'section' => 'hashone_blog_sec',
-        'label' => esc_html__('Disable Blog Section ', 'hashone'),
+        'label' => esc_html__('Disable Blog Section', 'hashone'),
         'on_off_label' => array(
             'on' => esc_html__('Yes', 'hashone'),
             'off' => esc_html__('No', 'hashone')
@@ -1091,7 +1106,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Customize_Heading($wp_customize, 'hashone_blog_heading', array(
         'settings' => 'hashone_blog_heading',
         'section' => 'hashone_blog_sec',
-        'label' => esc_html__('Blog Title / SubTitle ', 'hashone'),
+        'label' => esc_html__('Blog Title / Subtitle', 'hashone'),
     )));
 
     $wp_customize->add_setting('hashone_blog_title', array(
@@ -1117,7 +1132,7 @@ function hashone_customize_register($wp_customize) {
         'settings' => 'hashone_blog_sub_title',
         'section' => 'hashone_blog_sec',
         'type' => 'textarea',
-        'label' => esc_html__('Sub Title', 'hashone')
+        'label' => esc_html__('Subtitle', 'hashone')
     ));
 
     //BLOG SETTINGS
@@ -1171,7 +1186,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Switch_Control($wp_customize, 'hashone_disable_contact_sec', array(
         'settings' => 'hashone_disable_contact_sec',
         'section' => 'hashone_contact_sec',
-        'label' => esc_html__('Disable Contact Section ', 'hashone'),
+        'label' => esc_html__('Disable Contact Section', 'hashone'),
         'on_off_label' => array(
             'on' => esc_html__('Yes', 'hashone'),
             'off' => esc_html__('No', 'hashone')
@@ -1185,7 +1200,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->add_control(new Hashone_Customize_Heading($wp_customize, 'hashone_contact_heading', array(
         'settings' => 'hashone_contact_heading',
         'section' => 'hashone_contact_sec',
-        'label' => esc_html__('Contact Title / SubTitle ', 'hashone'),
+        'label' => esc_html__('Contact Title / Subtitle', 'hashone'),
     )));
 
     $wp_customize->add_setting('hashone_contact_title', array(
@@ -1211,7 +1226,7 @@ function hashone_customize_register($wp_customize) {
         'settings' => 'hashone_contact_sub_title',
         'section' => 'hashone_contact_sec',
         'type' => 'textarea',
-        'label' => esc_html__('Sub Title', 'hashone')
+        'label' => esc_html__('Subtitle', 'hashone')
     ));
 
     $wp_customize->add_setting('hashone_contact_bg_heading', array(
@@ -1254,7 +1269,7 @@ function hashone_customize_register($wp_customize) {
         'settings' => 'hashone_contact_form',
         'section' => 'hashone_contact_sec',
         'type' => 'text',
-        'label' => esc_html__('Contact Form ShortCode', 'hashone'),
+        'label' => esc_html__('Contact Form Shortcode', 'hashone'),
         'description' => esc_html__('Add shortcode for Contact form or go to to widget page to add your own widget.', 'hashone'),
     ));
 
@@ -1378,7 +1393,7 @@ function hashone_customize_register($wp_customize) {
         'settings' => 'hashone_social_youtube',
         'section' => 'hashone_contact_sec',
         'type' => 'text',
-        'label' => esc_html__('Youtube', 'hashone')
+        'label' => esc_html__('YouTube', 'hashone')
     ));
 
     $wp_customize->add_setting('hashone_social_linkedin', array(
@@ -1391,7 +1406,7 @@ function hashone_customize_register($wp_customize) {
         'settings' => 'hashone_social_linkedin',
         'section' => 'hashone_contact_sec',
         'type' => 'text',
-        'label' => esc_html__('Linkedin', 'hashone')
+        'label' => esc_html__('LinkedIn', 'hashone')
     ));
 
     /* ============COPYRIGHT TEXT============ */
@@ -1427,7 +1442,7 @@ add_action('customize_preview_init', 'hashone_customize_preview_js');
 function hashone_customizer_script() {
     wp_enqueue_script('hashone-customizer-script', get_template_directory_uri() . '/inc/js/customizer-scripts.js', array('jquery'), '', true);
     wp_enqueue_script('chosen-jquery', get_template_directory_uri() . '/inc/js/chosen.jquery.js', array('jquery'), '1.4.1', true);
-    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.css');
+    wp_enqueue_style('fontawesome-7.3.1', get_template_directory_uri() . '/css/font-awesome.css', array(), '7.3.1');
     wp_enqueue_style('hashone-customizer-chosen', get_template_directory_uri() . '/inc/css/chosen.css');
     wp_enqueue_style('hashone-customizer-style', get_template_directory_uri() . '/inc/css/customizer-style.css');
 }
@@ -1448,32 +1463,38 @@ if (class_exists('WP_Customize_Control')):
 
         public function render_content() {
             ?>
-            <span class="customize-control-title">
-                <?php echo esc_html($this->label); ?>
-            </span>
-
-            <?php if ($this->description) { ?>
-                <span class="description customize-control-description">
-                    <?php echo wp_kses_post($this->description); ?>
-                </span>
-            <?php } ?>
-
-            <?php
-            $switch_class = ($this->value() == 'on') ? 'switch-on' : '';
-            $on_off_label = $this->on_off_label;
-            ?>
-            <div class="onoffswitch <?php echo $switch_class; ?>">
-                <div class="onoffswitch-inner">
-                    <div class="onoffswitch-active">
-                        <div class="onoffswitch-switch"><?php echo esc_html($on_off_label['on']) ?></div>
-                    </div>
-
-                    <div class="onoffswitch-inactive">
-                        <div class="onoffswitch-switch"><?php echo esc_html($on_off_label['off']) ?></div>
-                    </div>
-                </div>	
+            <div class="ht--toggle-container">
+                <span class="customize-control-title ht--toggle-title"><?php echo esc_html($this->label); ?></span>
+                <div class="ht--toggle onoffswitch<?php echo ($this->value() == 'on') ? ' switch-on' : ''; ?>" role="switch" tabindex="0" aria-checked="<?php echo ($this->value() == 'on') ? 'true' : 'false'; ?>" aria-label="<?php echo esc_attr($this->label); ?>">
+                    <span class="ht--toggle-label"></span>
+                </div>
+                <input <?php $this->link(); ?> type="hidden" value="<?php echo esc_attr($this->value()); ?>"/>
+                <?php if ($this->description) { ?>
+                    <span class="description customize-control-description"><?php echo wp_kses_post($this->description); ?></span>
+                <?php } ?>
             </div>
-            <input <?php $this->link(); ?> type="hidden" value="<?php echo esc_attr($this->value()); ?>"/>
+            <?php
+        }
+
+    }
+
+    /** On/off toggle for settings saved as 1/0 - same look as the switch above. */
+    class Hashone_Toggle_Control extends WP_Customize_Control {
+
+        public $type = 'ht--toggle';
+
+        public function render_content() {
+            ?>
+            <div class="ht--toggle-container">
+                <span class="customize-control-title ht--toggle-title"><?php echo esc_html($this->label); ?></span>
+                <div class="ht--toggle">
+                    <input class="ht--toggle-checkbox" type="checkbox" id="<?php echo esc_attr($this->id); ?>" <?php checked($this->value()); ?> value="1" <?php $this->link(); ?> />
+                    <label class="ht--toggle-label" for="<?php echo esc_attr($this->id); ?>"><span class="screen-reader-text"><?php echo esc_html($this->label); ?></span></label>
+                </div>
+                <?php if ($this->description) { ?>
+                    <span class="description customize-control-description"><?php echo wp_kses_post($this->description); ?></span>
+                <?php } ?>
+            </div>
             <?php
         }
 
@@ -1731,6 +1752,75 @@ if (class_exists('WP_Customize_Section')):
      * @since  1.0.0
      * @access public
      */
+    /*
+     *  The upgrade card at the top of the Customizer.
+     *
+     *  Its own section type rather than another use of Hashone_Customize_Section_Pro:
+     *  that one is a single row (label + button) and is reused for the locked
+     *  "Get Pro" rows, while this card carries a badge, selling points, the
+     *  price and a guarantee line.
+     */
+    class Hashone_Pro_Banner_Section extends WP_Customize_Section {
+
+        public $type = 'ht--pro-banner';
+        public $badge = '';
+        public $points = array();
+        public $price = '';
+        public $price_prefix = '';
+        public $price_note = '';
+        public $upgrade_text = '';
+        public $upgrade_url = '';
+        public $note = '';
+        public $is_sale = false;
+
+        public function json() {
+            $json = parent::json();
+
+            foreach (array('badge', 'points', 'price', 'price_prefix', 'price_note', 'upgrade_text', 'upgrade_url', 'note', 'is_sale') as $key) {
+                $json[$key] = $this->$key;
+            }
+
+            return $json;
+        }
+
+        protected function render_template() {
+            ?>
+            <li id="accordion-section-{{ data.id }}" class="accordion-section control-section control-section-{{ data.type }} cannot-expand<# if ( data.is_sale ) { #> is-sale<# } #>">
+                <div class="ht--pro-banner">
+                    <# if ( data.badge ) { #>
+                    <span class="ht--pro-banner-badge">{{ data.badge }}</span>
+                    <# } #>
+
+                    <# if ( data.title ) { #>
+                    <h3 class="ht--pro-banner-title">{{ data.title }}</h3>
+                    <# } #>
+
+                    <# if ( data.points.length ) { #>
+                    <ul class="ht--pro-banner-points">
+                        <# _.each( data.points, function( point ) { #>
+                        <li>{{ point }}</li>
+                        <# } ) #>
+                    </ul>
+                    <# } #>
+
+                    <# if ( data.price ) { #>
+                    <p class="ht--pro-banner-price"><# if ( data.price_prefix ) { #><span>{{ data.price_prefix }}</span> <# } #><strong>{{ data.price }}</strong> <span>{{ data.price_note }}</span></p>
+                    <# } #>
+
+                    <# if ( data.upgrade_text && data.upgrade_url ) { #>
+                    <a href="{{ data.upgrade_url }}" class="ht--pro-banner-button" target="_blank">{{ data.upgrade_text }}<span class="dashicons dashicons-arrow-right-alt" aria-hidden="true"></span></a>
+                    <# } #>
+
+                    <# if ( data.note ) { #>
+                    <p class="ht--pro-banner-note"><span class="dashicons dashicons-shield" aria-hidden="true"></span>{{ data.note }}</p>
+                    <# } #>
+                </div>
+            </li>
+            <?php
+        }
+
+    }
+
     class Hashone_Customize_Section_Pro extends WP_Customize_Section {
 
         /**
