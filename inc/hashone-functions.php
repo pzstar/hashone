@@ -218,14 +218,7 @@ add_action('tgmpa_register', 'hashone_register_required_plugins');
 
 if (!function_exists('hashone_get_active_campaign')) {
 
-    /*
-     *  The Total Plus seasonal sale currently running, or false. Its badge,
-     *  title and button replace the Customizer upgrade card's copy.
-     *
-     *  Windows are month-day so they repeat every year without anyone having to
-     *  edit a date. Filterable so a campaign can be added or the dates moved
-     *  without touching the theme.
-     */
+    /* The Total Plus seasonal sale currently running, or false. */
 
     function hashone_get_active_campaign() {
         $campaigns = apply_filters('hashone_upgrade_campaigns', array(
@@ -275,10 +268,7 @@ if (!function_exists('hashone_get_active_campaign')) {
 
 if (!function_exists('hashone_premium_demo_config')) {
 
-    /*
-     *  Total Plus demos shown as Premium in the HashThemes Demo Importer,
-     *  after HashOne's own free demo.
-     */
+    /* Total Plus demos shown as Premium in the HashThemes Demo Importer, after HashOne's own free demo. */
 
     function hashone_premium_demo_config($demos) {
         $premium_demos = array(

@@ -19,12 +19,7 @@
 </div>
 
 <?php
-/*
- *  Feature rows carry the .feature-row class and are numbered by a CSS counter
- *  rather than by a number typed into each label. The numbers used to be part
- *  of the translatable strings, which meant inserting a feature renumbered -
- *  and so invalidated the translation of - every row below it.
- */
+/* Feature rows carry the .feature-row class and are numbered by a CSS counter. */
 ?>
 <table class="comparison-table">
     <tr>

@@ -78,7 +78,6 @@ if (!class_exists('Hashone_Welcome')) :
             /* Adds Footer Rating Text */
             add_filter('admin_footer_text', array($this, 'admin_footer_text'));
 
-            /* Hide Notice */
             add_filter('wp_loaded', array($this, 'hide_admin_notice'), 10);
 
             /* Create a Welcome Page */

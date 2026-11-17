@@ -57,9 +57,6 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->register_section_type('Hashone_Pro_Banner_Section');
     
     // Register sections.
-    // Seasonal campaigns swap the banner copy automatically - see hashone_get_active_campaign().
-    // During a sale the card leads with the sale and drops the list price, which
-    // would contradict the discount shown at checkout.
     $hashone_campaign = hashone_get_active_campaign();
     $wp_customize->add_section(new Hashone_Pro_Banner_Section($wp_customize, 'hashone-pro-section', array(
         'priority' => 0,
@@ -1752,14 +1749,7 @@ if (class_exists('WP_Customize_Section')):
      * @since  1.0.0
      * @access public
      */
-    /*
-     *  The upgrade card at the top of the Customizer.
-     *
-     *  Its own section type rather than another use of Hashone_Customize_Section_Pro:
-     *  that one is a single row (label + button) and is reused for the locked
-     *  "Get Pro" rows, while this card carries a badge, selling points, the
-     *  price and a guarantee line.
-     */
+    /* The upgrade card at the top of the Customizer. */
     class Hashone_Pro_Banner_Section extends WP_Customize_Section {
 
         public $type = 'ht--pro-banner';

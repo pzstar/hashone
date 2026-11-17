@@ -32,6 +32,7 @@ Hash One is a beautiful WordPress theme with lots of featured packed option to c
 * Meanpath and TripAdvisor icons, which Font Awesome no longer includes, removed from the icon picker - Removed
 * Font Awesome now loads under the same stylesheet handle as in the other HashThemes themes and plugins, so it loads only once - Changed
 * Unused files - Removed
+* Code comments shortened, and unused commented-out code removed - Changed
 
 = 1.3.9 - Jan 18, 2026 =
 * Recommended plugin added

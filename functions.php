@@ -61,7 +61,6 @@ if (!function_exists('hashone_setup')) :
             'header-text' => array('.hs-site-title', '.hs-site-description'),
         ));
         
-        // Add support for Block Styles.
         add_theme_support('wp-block-styles');
 
         // Add support for full and wide align images.
@@ -193,26 +192,17 @@ if (!function_exists('hashone_fonts_url')) :
         $fonts = array();
         $subsets = 'latin,latin-ext';
 
-        /*
-         * Translators: If there are characters in your language that are not supported
-         * by Open Sans, translate this to 'off'. Do not translate into your own language.
-         */
+        /* Translators: If there are characters in your language that are not supported by Open Sans, translate this to 'off'. */
         if ('off' !== esc_html_x('on', 'Open Sans font: on or off', 'hashone')) {
             $fonts[] = 'Open Sans:400,300,600,700';
         }
 
-        /*
-         * Translators: If there are characters in your language that are not supported
-         * by Inconsolata, translate this to 'off'. Do not translate into your own language.
-         */
+        /* Translators: If there are characters in your language that are not supported by Inconsolata, translate this to 'off'. */
         if ('off' !== esc_html_x('on', 'Roboto Condensed font: on or off', 'hashone')) {
             $fonts[] = 'Roboto Condensed:300italic,400italic,700italic,400,300,700';
         }
 
-        /*
-         * Translators: To add an additional character subset specific to your language,
-         * translate this to 'greek', 'cyrillic', 'devanagari' or 'vietnamese'. Do not translate into your own language.
-         */
+        /* Translators: To add an additional character subset specific to your language, translate this to 'greek', 'cyrillic', 'devanagari' or 'vietnamese'. */
         $subset = esc_html_x('no-subset', 'Add new subset (greek, cyrillic, devanagari, vietnamese)', 'hashone');
 
         if ('cyrillic' == $subset) {
