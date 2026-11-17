@@ -57,6 +57,7 @@ function hashone_customize_register($wp_customize) {
     $wp_customize->register_section_type('Hashone_Pro_Banner_Section');
     
     // Register sections.
+    // Seasonal campaigns swap the banner copy; during a sale the card drops the list price.
     $hashone_campaign = hashone_get_active_campaign();
     $wp_customize->add_section(new Hashone_Pro_Banner_Section($wp_customize, 'hashone-pro-section', array(
         'priority' => 0,

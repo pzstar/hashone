@@ -19,7 +19,7 @@
 </div>
 
 <?php
-/* Feature rows carry the .feature-row class and are numbered by a CSS counter. */
+/* Feature rows are numbered by a CSS counter, so inserting one doesn't break other translations. */
 ?>
 <table class="comparison-table">
     <tr>

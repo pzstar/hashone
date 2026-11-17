@@ -218,7 +218,7 @@ add_action('tgmpa_register', 'hashone_register_required_plugins');
 
 if (!function_exists('hashone_get_active_campaign')) {
 
-    /* The Total Plus seasonal sale currently running, or false. */
+    /* The Total Plus seasonal sale currently running, or false. Month-day windows repeat yearly; its copy replaces the upgrade card's. */
 
     function hashone_get_active_campaign() {
         $campaigns = apply_filters('hashone_upgrade_campaigns', array(
