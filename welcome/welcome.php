@@ -86,6 +86,9 @@ if (!class_exists('Hashone_Welcome')) :
             add_action('after_switch_theme', array($this, 'erase_hide_notice'));
 
             add_action('wp_ajax_hashone_activate_plugin', array($this, 'activate_plugin'));
+
+            add_action('admin_notices', array($this, 'sale_notice'));
+            add_action('admin_init', array($this, 'hide_sale_notice'));
         }
 
         /** Trigger Welcome Message Notification */
@@ -153,9 +156,66 @@ if (!class_exists('Hashone_Welcome')) :
             }
         }
 
+        /* Dismiss key of the sale notice due on this screen, or '' when there is none. */
+        private function sale_notice_key() {
+            if (!function_exists('hashone_get_active_campaign') || !current_user_can('manage_options') || class_exists('TotalPlus')) {
+                return '';
+            }
+
+            // The settings page shows the same banner at the top.
+            $screen = function_exists('get_current_screen') ? get_current_screen() : null;
+            if ($screen && 'toplevel_page_hashone-welcome' === $screen->id) {
+                return '';
+            }
+
+            $campaign = hashone_get_active_campaign();
+            if (!$campaign || empty($campaign['image'])) {
+                return '';
+            }
+
+            // One key per sale and year, so the next sale shows again. A window that crosses New Year counts from its start year.
+            $year = (int) current_time('Y');
+            if ($campaign['end'] < $campaign['start'] && current_time('m-d') <= $campaign['end']) {
+                $year--;
+            }
+            $key = sanitize_key('sale-' . $campaign['id'] . '-' . $year);
+
+            return in_array($key, (array) get_option('hashone_dismissed_sales', array()), true) ? '' : $key;
+        }
+
+        public function sale_notice() {
+            $key = $this->sale_notice_key();
+            if (!$key) {
+                return;
+            }
+
+            $campaign = hashone_get_active_campaign();
+            ?>
+            <div class="notice hashone-sale-notice">
+                <a class="notice-dismiss" href="<?php echo esc_url(wp_nonce_url(add_query_arg('hashone-hide-sale', $key), $key, 'hashone_sale_nonce')); ?>"><span class="screen-reader-text"><?php esc_html_e('Dismiss this notice.', 'hashone'); ?></span></a>
+                <a href="<?php echo esc_url('https://hashthemes.com/wordpress-theme/total/?utm_source=wordpress&utm_medium=hashone-admin-notice&utm_campaign=hashone-upgrade&utm_content=admin-notice-' . $campaign['id']); ?>" target="_blank">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/' . $campaign['image']); ?>" alt="<?php echo esc_attr($campaign['title']); ?>">
+                </a>
+            </div>
+            <?php
+        }
+
+        /* Closes the sale notice for the rest of that sale. */
+        public function hide_sale_notice() {
+            if (isset($_GET['hashone-hide-sale'], $_GET['hashone_sale_nonce']) && current_user_can('manage_options')) {
+                $key = sanitize_key($_GET['hashone-hide-sale']);
+                check_admin_referer($key, 'hashone_sale_nonce');
+                $dismissed = (array) get_option('hashone_dismissed_sales', array());
+                $dismissed[] = $key;
+                update_option('hashone_dismissed_sales', array_values(array_unique($dismissed)));
+                wp_safe_redirect(remove_query_arg(array('hashone-hide-sale', 'hashone_sale_nonce'), wp_get_referer()));
+                exit;
+            }
+        }
+
         /** Register Menu for Welcome Page */
         public function welcome_register_menu() {
-            add_menu_page(esc_html__('Welcome', 'hashone'), sprintf(esc_html__('%s Settings', 'hashone'), esc_html(str_replace(' ', '', $this->theme_name))), 'manage_options', 'hashone-welcome', array($this, 'welcome_screen'), '', 60);
+            add_menu_page(esc_html__('Welcome', 'hashone'), sprintf(esc_html__('%s Settings', 'hashone'), esc_html(str_replace(' ', '', $this->theme_name))), 'manage_options', 'hashone-welcome', array($this, 'welcome_screen'), 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTcgMGgxOGE3IDcgMCAwIDEgNyA3djE4YTcgNyAwIDAgMS03IDdIN2E3IDcgMCAwIDEtNy03VjdhNyA3IDAgMCAxIDctN1ptMSA4djE2aDMuMnYtNi42aDUuNlYyNEgyMFY4aC0zLjJ2Ni40aC01LjZWOFptMTUuMiAwLTMuMiAydjIuNmwxLjYtMVYyNEgyNFY4WiIvPjwvc3ZnPg==', 60);
         }
 
         /** Welcome Page */

@@ -1,8 +1,8 @@
 === HashOne ===
 Contributors: hashthemes
 Requires at least: 6.3
-Tested up to: 6.9
-Stable tag: 1.4.0
+Tested up to: 7.1
+Stable tag: 1.4.1
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -22,6 +22,14 @@ Hash One is a beautiful WordPress theme with lots of featured packed option to c
 
 
 == Changelog ==
+= 1.4.1 - Nov 19, 2026 =
+* Customizer upgrade box made smaller: the price is in the button, and the feature list is removed - Changed
+* Seasonal sale banner on the admin screens during a sale, which can be closed - Added
+* Translator notes in the Google Fonts settings restored - Fixed
+* HashOne Settings menu item shows the HashOne logo - Added
+* Customizer: Import Demo Content listed above Documentation, as in the other HashThemes themes - Changed
+* Tested up to WordPress 7.1 - Changed
+
 = 1.4.0 - Nov 16, 2026 =
 * Settings page redesigned, with a compact header, a Total Plus card, clearer tabs, a setup checklist, Customizer shortcuts and rewritten help text - Changed
 * Gym & Fitness, Medical Center and Law Firm Total Plus demos on the Settings page - Added
