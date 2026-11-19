@@ -45,7 +45,7 @@ $hashone_percent = round(100 * $hashone_done / count($hashone_steps));
             <h3><?php esc_html_e('Start From a Demo', 'hashone'); ?></h3>
             <p><?php esc_html_e('Import a complete demo website, with its content and settings, in a single click, then replace the content with your own.', 'hashone'); ?></p>
             <?php echo $this->generate_hdi_install_button(); ?>
-            <p class="welcome-small"><a href="https://hashthemes.com/documentation/hashone-documentation/#ImportDemoContent" target="_blank"><?php esc_html_e('How the demo importer works', 'hashone'); ?></a></p>
+            <p class="welcome-small"><a href="https://hashthemes.com/documentation/hashone-documentation/#Import-Demo-Content" target="_blank"><?php esc_html_e('How the demo importer works', 'hashone'); ?></a></p>
         </div>
     </div>
 </div>
@@ -68,7 +68,7 @@ $hashone_percent = round(100 * $hashone_done / count($hashone_steps));
 <div class="welcome-block">
     <div class="welcome-block-head">
         <h3><?php esc_html_e('Build Your Home Page', 'hashone'); ?></h3>
-        <a href="https://hashthemes.com/documentation/hashone-documentation/#HomePageSetup" target="_blank"><?php esc_html_e('Step-by-step guide', 'hashone'); ?> <span aria-hidden="true">&rarr;</span></a>
+        <a href="https://hashthemes.com/documentation/hashone-documentation/#Home-Page-Setup" target="_blank"><?php esc_html_e('Step-by-step guide', 'hashone'); ?> <span aria-hidden="true">&rarr;</span></a>
     </div>
     <p class="welcome-block-intro"><?php echo esc_html__('Build the home page from the theme\'s ready-made sections in the Customizer, or design it freely with Elementor.', 'hashone'); ?></p>
 
