@@ -35,7 +35,7 @@ if (!class_exists('Hashone_Welcome')) :
                     'name' => 'Easy Elementor Addons',
                     'slug' => 'easy-elementor-addons',
                     'filename' => 'easy-elementor-addons',
-                    'thumb_path' => 'https://ps.w.org/easy-elementor-addons/assets/icon-256x256.png'
+                    'thumb_path' => 'https://ps.w.org/easy-elementor-addons/assets/icon-256x256.png?rev=3802812'
                 ),
                 'hash-form' => array(
                     'name' => 'Hash Form Builder',
@@ -53,7 +53,7 @@ if (!class_exists('Hashone_Welcome')) :
                     'name' => 'Simple Floating Menu',
                     'slug' => 'simple-floating-menu',
                     'filename' => 'simple-floating-menu',
-                    'thumb_path' => 'https://ps.w.org/simple-floating-menu/assets/icon-256x256.png'
+                    'thumb_path' => 'https://ps.w.org/simple-floating-menu/assets/icon-256x256.png?rev=3802983'
                 ),
                 'mini-ajax-woo-cart' => array(
                     'name' => 'Ajax Cart for WooCommerce',
@@ -65,7 +65,7 @@ if (!class_exists('Hashone_Welcome')) :
                     'name' => 'Onyx Dark Mode Switcher',
                     'slug' => 'onyx-dark-mode-switcher',
                     'filename' => 'onyx-dark-mode-switcher',
-                    'thumb_path' => 'https://ps.w.org/onyx-dark-mode-switcher/assets/icon-256x256.png'
+                    'thumb_path' => 'https://ps.w.org/onyx-dark-mode-switcher/assets/icon-256x256.gif?rev=3724147'
                 )
             );
 
@@ -257,6 +257,43 @@ if (!class_exists('Hashone_Welcome')) :
                 wp_enqueue_script('hashone-welcome', get_template_directory_uri() . '/welcome/js/welcome.js', array('plugin-install', 'updates'), HASHONE_VERSION, true);
                 wp_localize_script('hashone-welcome', 'importer_params', $importer_params);
             }
+        }
+
+        /* Current wordpress.org icon of a recommended plugin, cached for a day. */
+        public function plugin_icon($slug, $fallback) {
+            $icons = get_transient('hashone_plugin_icons');
+
+            if (!is_array($icons)) {
+                $icons = array();
+                $url = add_query_arg(array(
+                    'action' => 'plugin_information',
+                    'request' => array(
+                        'slugs' => implode(',', wp_list_pluck($this->free_plugins, 'slug')),
+                        'fields' => array('icons' => true, 'sections' => false, 'description' => false, 'versions' => false, 'reviews' => false, 'banners' => false, 'screenshots' => false, 'contributors' => false, 'tags' => false)
+                    )
+                ), 'https://api.wordpress.org/plugins/info/1.2/');
+                $response = wp_remote_get($url, array('timeout' => 10));
+                $data = is_wp_error($response) ? null : json_decode(wp_remote_retrieve_body($response), true);
+
+                if (is_array($data)) {
+                    foreach ($data as $plugin_slug => $info) {
+                        if (empty($info['icons']) || !is_array($info['icons'])) {
+                            continue;
+                        }
+                        foreach (array('2x', '1x', 'svg') as $size) {
+                            if (!empty($info['icons'][$size])) {
+                                $icons[$plugin_slug] = $info['icons'][$size];
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                // Retry sooner when wordpress.org could not be reached.
+                set_transient('hashone_plugin_icons', $icons, $icons ? DAY_IN_SECONDS : HOUR_IN_SECONDS);
+            }
+
+            return !empty($icons[$slug]) ? $icons[$slug] : $fallback;
         }
 
         /* Check if plugin is installed */

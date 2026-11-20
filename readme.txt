@@ -29,6 +29,7 @@ Hash One is a beautiful WordPress theme with lots of featured packed option to c
 * HashOne Settings menu item shows the HashOne logo - Added
 * Customizer: Import Demo Content listed above Documentation, as in the other HashThemes themes - Changed
 * Tested up to WordPress 7.1 - Changed
+* Recommended Plugins tab shows each plugin's current icon from WordPress.org instead of an old copy - Fixed
 
 = 1.4.0 - Nov 16, 2026 =
 * Settings page redesigned, with a compact header, a Total Plus card, clearer tabs, a setup checklist, Customizer shortcuts and rewritten help text - Changed
